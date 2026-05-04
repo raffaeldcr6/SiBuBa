@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -212,19 +210,6 @@ body {
     gap: 12px;
     flex-wrap: wrap;
 }
-
-.tombol-rincian {
-    padding: 10px 22px;
-    background: #16697A;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-}
-
 .tombol-pendaftaran {
     padding: 10px 22px;
     background: transparent;
