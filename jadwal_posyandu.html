@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibuba - Jadwal Posyandu</title>
+    <link rel="stylesheet" href="css/jadwal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<button class="tombol-hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="jadwal-wrapper">
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <p class="logo-besar">SI BUBA</p>
+            <p class="logo-kecil">Sistem Ibu Hamil & Balita</p>
+        </div>
+
+        <nav>
+            <a href="dashboard.html" class="menu-item"><i class="fa-solid fa-house"></i> Dashboard</a>
+            <a href="data_kesehatan.html" class="menu-item"><i class="fa-solid fa-users"></i> Data Kesehatan</a>
+            <a href="jadwal_posyandu.html" class="menu-item aktif"><i class="fa-regular fa-calendar"></i> Jadwal Posyandu</a>
+            <a href="riwayat.html" class="menu-item"><i class="fa-solid fa-clock-rotate-left"></i> Riwayat Pemeriksaan</a>
+            <a href="edukasi_kesehatan.html" class="menu-item"><i class="fa-solid fa-book-open"></i> Edukasi Kesehatan</a>
+
+            <hr class="garis-menu">
+
+            <a href="pengaturan.html" class="menu-item"><i class="fa-solid fa-gear"></i> Pengaturan</a>
+            <a href="login.html" class="menu-item keluar"><i class="fa-solid fa-right-from-bracket"></i> Keluar</a>
+        </nav>
+    </aside>
+
+    <section class="konten-utama">
+
+        <header class="header-halaman">
+            <div>
+                <h1>Jadwal Posyandu</h1>
+                <p>Pantau jadwal imunisasi dan pemeriksaan si Kecil di lingkungan Anda.</p>
+            </div>
+        </header>
+
+        <div class="layout-jadwal">
+
+            <article class="kartu-jadwal-utama">
+                <div class="badge-terdekat">
+                    <span class="titik-oranye"></span> TERDEKAT
+                </div>
+
+                <div class="jadwal-isi">
+                    <div class="jadwal-info">
+                        <h2>Imunisasi Polio & Vitamin A</h2>
+
+                        <ul class="detail-jadwal">
+                            <li><i class="fa-regular fa-calendar"></i> Jumat, 15 November 2024</li>
+                            <li><i class="fa-solid fa-location-dot"></i> Posyandu Mawar</li>
+                            <li><i class="fa-regular fa-clock"></i> 08:00 - 11:30 WIB</li>
+                        </ul>
+
+                        <div class="tombol-jadwal">
+                            <button class="tombol-rincian">Lihat Rincian</button>
+                            <button class="tombol-pendaftaran"><a href="booking.html">Daftar Sekarang</a></button>
+                        </div>
+                </div>
+
+                    <div class="jadwal-gambar">
+                        <img src="image/foto_posyandu.png" alt="Foto Posyandu">
+                    </div>
+                </div>
+            </article>
+
+            <section class="panel-tengah">
+                <article class="kartu-target">
+                    <div class="target-header">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span class="target-label">TARGET BULAN INI</span>
+                    </div>
+
+                    <h3 class="target-judul">Lengkap</h3>
+                    <p class="target-sub">Semua jadwal sudah terpenuhi</p>
+
+                    <div class="progress-bar">
+                        <div class="progress-isi"></div>
+                    </div>
+                </article>
+
+                <article class="kartu-peta">
+                    <p class="peta-judul"><i class="fa-solid fa-map"></i> Peta Lokasi</p>
+
+                    <div class="peta-gambar">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.194741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTEnNDEuMSJTIDEwNsKwNDknMTAuNCJF!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section class="bagian-mendatang">
+                <h3 class="judul-seksi">Jadwal Mendatang</h3>
+
+                <div class="grid-mendatang">
+                    <article class="kartu-mendatang">
+                        <h4>Penimbangan</h4>
+                        <p>Pemantauan tumbuh kembang</p>
+                    </article>
+
+                    <article class="kartu-mendatang">
+                        <h4>Obat Cacing</h4>
+                        <p>Program kesehatan anak</p>
+                    </article>
+
+                    <article class="kartu-mendatang">
+                        <h4>Kelas MPASI</h4>
+                        <p>Edukasi gizi bayi</p>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src = "js/script.js"></script>
+
+</body>
+</html>

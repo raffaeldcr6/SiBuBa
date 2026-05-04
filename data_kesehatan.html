@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibuba - Data Kesehatan</title>
+    <link rel="stylesheet" href="css/data_kesehatan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <button class="tombol-hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="kesehatan-wrapper">
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <p class="logo-besar">SI BUBA</p>
+            <p class="logo-kecil">Sistem Ibu Hamil & Balita</p>
+        </div>
+
+        <nav>
+            <a href="dashboard.html" class="menu-item"><i class="fa-solid fa-house"></i> Dashboard</a>
+            <a href="data_kesehatan.html" class="menu-item aktif"><i class="fa-solid fa-users"></i> Data Kesehatan</a>
+            <a href="jadwal_posyandu.html" class="menu-item"><i class="fa-regular fa-calendar"></i> Jadwal Posyandu</a>
+            <a href="riwayat.html" class="menu-item"><i class="fa-solid fa-clock-rotate-left"></i> Riwayat Pemeriksaan</a>
+            <a href="edukasi.html" class="menu-item"><i class="fa-solid fa-book-open"></i> Edukasi Kesehatan</a>
+
+            <hr class="garis-menu">
+
+            <a href="#" class="menu-item"><i class="fa-solid fa-gear"></i> Pengaturan</a>
+            <a href="login.html" class="menu-item keluar"><i class="fa-solid fa-right-from-bracket"></i> Keluar</a>
+        </nav>
+    </aside>
+
+    <section class="konten-utama">
+
+        <article class="banner">
+                <div class="banner-teks">
+                    <h2>Pantau Tumbuh Kembang Buah Hati</h2>
+                    <p>Pastikan setiap milestone pertumbuhan tercatat dengan akurat untuk masa depan yang lebih cerah.</p>
+                </div>
+                <div class="banner-gambar">
+                    <img src="image/bumil.png" alt="Ibu dan Anak">
+                </div>
+            </article>
+
+            <section class="grid-anak">
+                <article class="kartu-anak">
+        <header class="kartu-header">
+
+            <div class="avatar-anak">BJ</div>
+
+            <div>
+                <h3 class="nama-anak">Budi Jr.</h3>
+                <span class="usia-anak">
+                    <i class="fa-regular fa-user"></i> 2 Tahun
+                </span>
+            </div>
+
+        </header>
+
+        <div class="kartu-stats">
+            <div class="stat-item">
+                <span class="stat-label">BERAT BADAN</span>
+                <span class="stat-nilai">12.0 <small>kg</small></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">TINGGI BADAN</span>
+                <span class="stat-nilai">85 <small>cm</small></span>
+            </div>
+        </div>
+
+        <div class="kartu-aksi">
+            <button class="tombol-detail">Detail</button>
+            <button class="tombol-edit">
+                <i class="fa-regular fa-pen-to-square"></i>
+            </button>
+        </div>
+    </article>
+
+
+    <article class="kartu-anak">
+        <header class="kartu-header">
+
+            <div class="avatar-anak">AP</div>
+
+            <div>
+                <h3 class="nama-anak">Ani Putri</h3>
+                <span class="usia-anak">
+                    <i class="fa-regular fa-user"></i> 8 Bulan
+                </span>
+            </div>
+
+        </header>
+
+        <div class="kartu-stats">
+            <div class="stat-item">
+                <span class="stat-label">BERAT BADAN</span>
+                <span class="stat-nilai">7.5 <small>kg</small></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">TINGGI BADAN</span>
+                <span class="stat-nilai">68 <small>cm</small></span>
+            </div>
+        </div>
+
+        <div class="kartu-aksi">
+            <button class="tombol-detail">Detail</button>
+            <button class="tombol-edit">
+                <i class="fa-regular fa-pen-to-square"></i>
+            </button>
+        </div>
+    </article>
+
+        
+            <a href="tambah_anak.html" class="kartu-tambah">
+                <div class="tombol-tambah-ikon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <p class="tambah-judul">Tambah Data Anak</p>
+                <p class="tambah-sub">Lengkapi profil kesehatan keluarga</p>
+            </a>
+
+        </section>
+
+        <section class="bagian-bawah">
+
+            <section class="aktivitas">
+                <h3 class="judul-seksi">Aktivitas Terakhir</h3>
+
+                <article class="aktivitas-item">
+                    <div class="aktivitas-ikon ikon-biru">
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                    <div class="aktivitas-info">
+                        <p class="aktivitas-judul">Imunisasi Polio - Budi Jr.</p>
+                        <p class="aktivitas-meta">Puskesmas Melati • 2 hari yang lalu</p>
+                    </div>
+                    <span class="badge-selesai">Selesai</span>
+                </article>
+
+                <article class="aktivitas-item">
+                    <div class="aktivitas-ikon ikon-oranye">
+                        <i class="fa-regular fa-ruler"></i>
+                    </div>
+                    <div class="aktivitas-info">
+                        <p class="aktivitas-judul">Pengukuran Tinggi - Ani Putri</p>
+                        <p class="aktivitas-meta">Posyandu Mandiri • 1 minggu yang lalu</p>
+                    </div>
+                    <span class="badge-selesai">Selesai</span>
+                </article>
+            </section>
+
+            <article class="tips-nutrisi">
+                <div class="tips-ikon">
+                    <i class="fa-regular fa-lightbulb"></i>
+                </div>
+                <h4>Tips Nutrisi Hari Ini</h4>
+                <p>Pemberian ASI Eksklusif sangat penting untuk perkembangan otak dan sistem imun bayi di 6 bulan pertama.</p>
+                <a href="edukasi.html" class="tombol-baca">Baca Selengkapnya →</a>
+            </article>
+
+        </section>
+
+    </section>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
