@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibuba - Tambah Anak</title>
+    <link rel="stylesheet" href="css/tambah_anak.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="halaman-tengah">
+        <section class="card-tambah">
+
+            <div class="header-form">
+                <a href="data_kesehatan.html" class="tombol-kembali">
+                     Kembali
+                </a>
+                <h2>Tambah Data Anak</h2>
+                <p>Lengkapi informasi anak untuk pemantauan kesehatan</p>
+            </div>
+
+            <div class="form-wrapper">
+
+                <article class="preview-card">
+                    <div class="preview-avatar" id="previewAvatar">
+                        <span id="previewInisial">?</span>
+                    </div>
+                    <h3 id="previewNama">Nama Anak</h3>
+                    <p id="previewUsia">Usia akan tampil di sini</p>
+                    <div class="preview-info">
+                        <div class="preview-badge">
+                            <i class="fa-solid fa-venus-mars"></i>
+                            <span id="previewJK">—</span>
+                        </div>
+                        <div class="preview-badge">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span id="previewGolDar">—</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="form-card">
+                    <form id="formTambahAnak" onsubmit="return false;">
+
+                        <div class="grup-input">
+                            <label for="namaAnak">Nama Anak</label>
+                            <input type="text" id="namaAnak" class="input-field" placeholder="Masukkan nama lengkap" oninput="perbaruiPratinjau()">
+                            <span class="pesan-error" id="errorNama"></span>
+                        </div>
+
+                        <div class="baris-dua-kolom">
+                            <div class="grup-input">
+                                <label for="tanggalLahir">Tanggal Lahir</label>
+                                <input type="date" id="tanggalLahir" class="input-field" onchange="perbaruiPratinjau()">
+                                <span class="pesan-error" id="errorTanggal"></span>
+                            </div>
+                            <div class="grup-input">
+                                <label for="jenisKelamin">Jenis Kelamin</label>
+                                <select id="jenisKelamin" class="input-field" onchange="perbaruiPratinjau()">
+                                    <option value="">Pilih</option>
+                                    <option>Laki-laki</option>
+                                    <option>Perempuan</option>
+                                </select>
+                                <span class="pesan-error" id="errorJK"></span>
+                            </div>
+                        </div>
+
+                        <div class="baris-dua-kolom">
+                            <div class="grup-input">
+                                <label for="beratLahir">Berat Lahir (gram)</label>
+                                <input type="number" id="beratLahir" class="input-field" placeholder="cth: 3200">
+                                <span class="pesan-error" id="errorBerat"></span>
+                            </div>
+                            <div class="grup-input">
+                                <label for="tinggiLahir">Panjang Lahir (cm)</label>
+                                <input type="number" id="tinggiLahir" class="input-field" placeholder="cth: 50">
+                                <span class="pesan-error" id="errorTinggi"></span>
+                            </div>
+                        </div>
+
+                        <div class="grup-input">
+                            <label for="golonganDarah">Golongan Darah</label>
+                            <select id="golonganDarah" class="input-field" onchange="perbaruiPratinjau()">
+                                <option value="">Tidak tahu / belum diketahui</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>AB</option>
+                                <option>O</option>
+                            </select>
+                        </div>
+
+                        <div class="grup-input">
+                            <label for="catatan">Catatan Tambahan</label>
+                            <textarea id="catatan" class="input-field" placeholder="Catatan kondisi kesehatan, alergi, dll..." maxlength="300"></textarea>
+                            <span class="hitung-karakter" id="hitungKarakter">0 / 300 karakter</span>
+                        </div>
+
+                        <div class="aksi-form">
+                            <a href="data_kesehatan.html" class="tombol-batal">Batal</a>
+                            <button type="button" class="tombol-simpan" onclick="simpanDataAnak()">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                                Simpan Data
+                            </button>
+                        </div>
+
+                    </form>
+                </article>
+
+            </div>
+        </section>
+    </section>
+
+    <div class="overlay-modal" id="overlayModal">
+        <div class="modal-sukses">
+            <div class="modal-ikon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3>Berhasil Ditambahkan!</h3>
+            <p id="modalDeskripsi"></p>
+            <div class="modal-aksi">
+                <button class="tombol-lagi" onclick="tambahAnakLagi()">
+                    <i class="fa-solid fa-plus"></i>
+                    Tambah Anak Lagi
+                </button>
+                <a href="data_kesehatan.html" class="tombol-selesai">Selesai</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="tambah_anak.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiBuba - Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<button class="tombol-hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="dashboard-wrapper">
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <p class="logo-besar">SI BUBA</p>
+            <p class="logo-kecil">Sistem Ibu Hamil & Balita</p>
+        </div>
+
+        <nav>
+            <a href="dashboard.html" class="menu-item aktif"><i class="fa-solid fa-house"></i> Dashboard</a>
+            <a href="data_kesehatan.html" class="menu-item"><i class="fa-solid fa-users"></i> Data Kesehatan</a>
+            <a href="jadwal_posyandu.html" class="menu-item"><i class="fa-regular fa-calendar"></i> Jadwal Posyandu</a>
+            <a href="riwayat.html" class="menu-item"><i class="fa-solid fa-clock-rotate-left"></i> Riwayat Pemeriksaan</a>
+            <a href="edukasi_kesehatan.html" class="menu-item"><i class="fa-solid fa-book-open"></i> Edukasi Kesehatan</a>
+
+            <hr class="garis-menu">
+
+            <a href="pengaturan.html" class="menu-item"><i class="fa-solid fa-gear"></i> Pengaturan</a>
+            <a href="login.html" class="menu-item keluar"><i class="fa-solid fa-right-from-bracket"></i> Keluar</a>
+        </nav>
+
+    </aside>
+
+    <section class="konten-utama">
+
+        <div class="header-dashboard">
+
+            <div>
+                <h1>Halo, Ibu User!</h1>
+                <p>Selamat pagi! Pantau terus perkembangan si kecil untuk memastikan mereka tumbuh optimal dan bahagia hari ini.</p>
+            </div>
+
+            <div class="profil-pengguna">
+                <div class="avatar-inisial">IB</div>
+                <div>
+                    <p class="nama-pengguna">Ibu Budi</p>
+                    <p class="status-pengguna">Aktif</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid-statistik">
+
+            <div class="kartu">
+                <div class="kartu-atas">
+                    <i class="fa-regular fa-face-smile ikon-teal"></i>
+                    <span class="badge badge-teal">TERDAFTAR</span>
+                </div>
+                <p class="kartu-label">Jumlah Anak</p>
+                <p class="kartu-nilai">2 <span>Anak</span></p>
+            </div>
+
+            <div class="kartu">
+                <div class="kartu-atas">
+                    <i class="fa-regular fa-calendar ikon-oranye"></i>
+                    <span class="badge badge-oranye">MENDATANG</span>
+                </div>
+                <p class="kartu-label">Jadwal Terdekat</p>
+                <p class="kartu-nilai-teks">Posyandu Melati</p>
+                <p class="kartu-sub oranye"><i class="fa-regular fa-calendar fa-xs"></i> 12 Okt, 08:00</p>
+            </div>
+
+            <div class="kartu">
+                <div class="kartu-atas">
+                    <i class="fa-solid fa-shield-halved ikon-hijau"></i>
+                    <span class="badge badge-hijau">STABIL</span>
+                </div>
+                <p class="kartu-label">Status Kesehatan Terbaru</p>
+                <p class="kartu-nilai-teks">Anak Sehat</p>
+                <p class="kartu-sub hijau">Growth: Normal (95%)</p>
+            </div>
+
+        </div>
+
+        <div class="grid-bawah">
+
+            <div class="kartu kartu-tips">
+                <h3>Tips Nutrisi Hari Ini</h3>
+                <p>Berikan ASI eksklusif dan mulai perkenalkan MPASI bertekstur lembut untuk perkembangan motorik mulut Ani.</p>
+                <a href="#" class="link-baca">BACA SELENGKAPNYA</a>
+                <i class="fa-solid fa-utensils dekorasi-ikon"></i>
+            </div>
+
+            <div class="kartu">
+                <h3 class="kartu-judul">Aktivitas Terbaru</h3>
+                <ul class="daftar-aktivitas">
+                    <li><span class="titik hijau"></span> Imunisasi Polio Budi Jr. Selesai</li>
+                    <li><span class="titik oranye"></span> Pencatatan Berat Badan Ani (+0.5kg)</li>
+                </ul>
+            </div>
+
+            <div class="panel-kanan">
+
+                <div class="kartu">
+                    <h3 class="kartu-judul">Anak Saya</h3>
+
+                    <div class="item-anak">
+                        <div class="avatar-anak teal">BJ</div>
+                        <div>
+                            <p class="nama-anak">Budi Jr.</p>
+                            <p class="usia-anak">2 Tahun 4 Bulan</p>
+                        </div>
+                    </div>
+
+                    <hr class="garis-anak">
+
+                    <div class="item-anak">
+                        <div class="avatar-anak abu">An</div>
+                        <div>
+                            <p class="nama-anak">Ani</p>
+                            <p class="usia-anak">6 Bulan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kartu kartu-info">
+                    <h3 class="kartu-judul hijau">Informasi Penting</h3>
+                    <p>Pekan imunisasi nasional dimulai minggu depan. Pastikan buku KIA anda sudah terisi lengkap.</p>
+                    <a href="#" class="link-info"><i class="fa-solid fa-circle-info"></i> Pelajari Selengkapnya</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
