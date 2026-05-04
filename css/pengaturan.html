@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan - SiBuba</title>
+
+    <link rel="stylesheet" href="css/pengaturan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<button class="tombol-hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="pengaturan-wrapper">
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <p class="logo-besar">SI BUBA</p>
+            <p class="logo-kecil">Sistem Ibu Hamil & Balita</p>
+        </div>
+
+        <nav>
+            <a href="dashboard.html" class="menu-item"><i class="fa-solid fa-house"></i> Dashboard</a>
+            <a href="data_kesehatan.html" class="menu-item"><i class="fa-solid fa-users"></i> Data Kesehatan</a>
+            <a href="jadwal_posyandu.html" class="menu-item"><i class="fa-regular fa-calendar"></i> Jadwal Posyandu</a>
+            <a href="riwayat.html" class="menu-item"><i class="fa-solid fa-clock-rotate-left"></i> Riwayat Pemeriksaan</a>
+            <a href="edukasi_kesehatan.html" class="menu-item"><i class="fa-solid fa-book-open"></i> Edukasi Kesehatan</a>
+
+            <hr class="garis-menu">
+
+            <a href="pengaturan.html" class="menu-item aktif"><i class="fa-solid fa-gear"></i> Pengaturan</a>
+            <a href="login.html" class="menu-item keluar"><i class="fa-solid fa-right-from-bracket"></i> Keluar</a>
+        </nav>
+
+    </aside>
+
+    <section class="konten-utama">
+
+        <header class="header-pengaturan">
+
+            <div>
+                <h1 class="judul-hal">Pengaturan</h1>
+                <p class="sub-judul">Kelola preferensi akun dan aplikasi Anda.</p>
+            </div>
+
+            <div class="profil-pengguna">
+                <div class="avatar-inisial">IB</div>
+                <div>
+                    <p class="nama-pengguna">Ibu Budi</p>
+                    <p class="status-pengguna">Aktif</p>
+                </div>
+            </div>
+
+        </header>
+
+        <article class="kartu">
+
+            <div class="kartu-header">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h2>Tips Kata Sandi</h2>
+            </div>
+
+            <div class="kartu-isi">
+                <ul>
+                    <li>Minimal 8 karakter</li>
+                    <li>Kombinasi huruf besar & kecil</li>
+                    <li>Sertakan angka dan simbol</li>
+                </ul>
+            </div>
+
+        </article>
+
+        <article class="kartu">
+
+            <div class="kartu-header">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h2>Informasi Sistem</h2>
+            </div>
+
+            <div class="kartu-isi">
+                <p>SiBuba adalah aplikasi akademik. Informasi kesehatan bersifat referensi umum.</p>
+            </div>
+
+        </article>
+
+    </section>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
