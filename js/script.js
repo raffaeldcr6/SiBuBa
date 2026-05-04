@@ -117,16 +117,12 @@ function login() {
 }
 
 const semuaData = [
-    { tanggal:'12 Okt 2024', nama:'Budi jr', inisial:'BR', berat:'8.5 kg', tinggi:'70 cm', catatan:'Perkembangan motorik sangat baik, disarankan untuk terus melakukan stimulasi tumbuh kembang secara rutin. Jadwalkan kunjungan berikutnya dalam 1 bulan' },
-    { tanggal:'05 Sep 2024', nama:'Ani Putri', inisial:'A', berat:'12.2 kg', tinggi:'70 cm', catatan:'Imunisasi booster Campak telah diberikan dengan baik. Kondisi suhu tubuh normal setelah imunisasi, disarankan untuk memantau kemungkinan demam ringan dalam 1-2 hari ke depan serta memastikan asupan cairan cukup.' },
-    { tanggal:'20 Agt 2024', nama:'Budi jr', inisial:'BR', berat:'8.2 kg', tinggi:'70 cm', catatan:'Pemeriksaan rutin bulanan menunjukkan pertumbuhan sesuai dengan usia. Disarankan untuk tetap menjaga pola makan seimbang dan rutin melakukan stimulasi perkembangan motorik anak di rumah.' },
-    { tanggal:'15 Jul 2024', nama:'Ani Putri', inisial:'A', berat:'11.8 kg', tinggi:'93 cm', catatan:'Konsultasi gizi dilakukan, anak terlihat aktif dan memiliki nafsu makan yang cukup baik. Disarankan untuk mempertahankan pola makan sehat dan variasi nutrisi agar pertumbuhan tetap optimal.' },
-    { tanggal:'10 Jun 2024', nama:'Budi jr', inisial:'BR', berat:'7.9 kg', tinggi:'68 cm', catatan:'Tumbuh kembang anak dalam kondisi normal dan sesuai dengan tahap usia. Vaksinasi telah lengkap, disarankan untuk tetap menjaga kebersihan lingkungan dan pola hidup sehat.' },
-    { tanggal:'20 Mei 2024', nama:'Ani Putri', inisial:'A', berat:'11.4 kg', tinggi:'91 cm', catatan:'Pemeriksaan gigi dan mulut menunjukkan kondisi yang baik tanpa adanya masalah serius. Disarankan untuk mulai membiasakan anak menjaga kebersihan gigi secara rutin setiap hari.' },
-    { tanggal:'15 Apr 2024', nama:'Budi jr', inisial:'BR', berat:'7.6 kg', tinggi:'66 cm', catatan:'Pemeriksaan rutin menunjukkan refleks dan kemampuan motorik anak berkembang dengan baik. Disarankan untuk terus memberikan stimulasi melalui permainan edukatif.' },
-    { tanggal:'10 Mar 2024', nama:'Ani Putri', inisial:'A', berat:'11.0 kg', tinggi:'89 cm', catatan:'Konsultasi tumbuh kembang menunjukkan status gizi dalam kondisi baik. Orang tua disarankan untuk terus memperhatikan asupan nutrisi dan aktivitas fisik anak setiap hari.' },
-    { tanggal:'05 Feb 2024', nama:'Budi jr', inisial:'BR', berat:'7.2 kg', tinggi:'64 cm', catatan:'Pemeriksaan pendengaran menunjukkan hasil normal dan tidak ditemukan gangguan. Anak dalam kondisi sehat dan aktif, disarankan untuk tetap melakukan pemeriksaan rutin.' },
-    { tanggal:'15 Jan 2024', nama:'Ani Putri', inisial:'A', berat:'10.7 kg', tinggi:'70 cm', catatan:'Imunisasi DPT booster telah diberikan dengan baik. Reaksi pasca imunisasi ringan dan masih dalam batas normal, disarankan untuk tetap memantau kondisi anak selama beberapa hari.' }
+    { tanggal:'12 Okt 2024', nama:'Budi jr', inisial:'BR', berat:'8.5 kg', tinggi:'70 cm', catatan:'Perkembangan motorik sangat baik.' },
+    { tanggal:'05 Sep 2024', nama:'Ani Putri', inisial:'A', berat:'12.2 kg', tinggi:'70 cm', catatan:'Imunisasi booster Campak telah diberikan.' },
+    { tanggal:'20 Agt 2024', nama:'Budi jr', inisial:'BR', berat:'8.2 kg', tinggi:'70 cm', catatan:'Pemeriksaan rutin bulanan.' },
+    { tanggal:'15 Jul 2024', nama:'Ani Putri', inisial:'A', berat:'11.8 kg', tinggi:'93 cm', catatan:'Konsultasi gizi dilakukan' },
+    { tanggal:'10 Jun 2024', nama:'Budi jr', inisial:'BR', berat:'7.9 kg', tinggi:'68 cm', catatan:'Tumbuh kembang anak dalam kondisi normal.' },
+    { tanggal:'20 Mei 2024', nama:'Ani Putri', inisial:'A', berat:'11.4 kg', tinggi:'91 cm', catatan:'Pemeriksaan gigi dan mulut menunjukkan kondisi yang baik.' },
 ];
 
 const perHalaman = 4;
@@ -198,17 +194,6 @@ function gantiHalaman(hal) {
     renderTabel();
 }
 
-function bukaDetailRiwayat(idx) {
-    const d = dataFiltered[idx];
-    document.getElementById('detailAvatar').textContent = d.inisial;
-    document.getElementById('detailNama').textContent = d.nama;
-    document.getElementById('detailBerat').textContent = d.berat;
-    document.getElementById('detailTinggi').textContent = d.tinggi;
-    document.getElementById('detailCatatan').textContent = d.catatan;
-    document.getElementById('modalDetail').classList.add('aktif');
-    document.getElementById('overlayDetail').classList.add('aktif');
-}
-
 function tutupDetail() {
     document.getElementById('modalDetail').classList.remove('aktif');
     document.getElementById('overlayDetail').classList.remove('aktif');
@@ -233,10 +218,6 @@ function renderTabel() {
             <td><span class="badge-berat">${d.berat}</span></td>
             <td><span class="badge-tinggi">${d.tinggi}</span></td>
             <td class="td-catatan">${d.catatan}</td>
-            <td class="td-aksi">
-                <button class="tombol-lihat" onclick="bukaDetailRiwayat(${mulai + i})">
-                    <i class="fa-regular fa-eye"></i>
-                </button>
             </td>
         </tr>
     `).join('');
