@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f9fb;
+}
+
+.booking-wrapper {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.header-booking {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header-booking h1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.header-booking p {
+    font-size: 12px;
+    color: #666;
+}
+
+.booking-card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+.grup-input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.grup-input label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.input-field {
+    padding: 9px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.error {
+    font-size: 11px;
+    color: red;
+}
+
+.aksi {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-batal {
+    padding: 8px 12px;
+    background: #eee;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #444;
+}
+
+.btn-submit {
+    padding: 8px 14px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay.aktif {
+    display: flex;
+}
+
+.modal {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.modal i {
+    font-size: 40px;
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+.modal h2 {
+    font-size: 1.2rem;
+}
+
+.modal p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.modal button {
+    padding: 8px 14px;
+    border: none;
+    background: #16697A;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .booking-wrapper {
+        padding: 20px;
+    }
+}
