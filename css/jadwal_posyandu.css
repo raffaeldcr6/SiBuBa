@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f7f8;
+    color: #1f2937;
+}
+
+.jadwal-wrapper {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh;
+}
+
+
+.konten-utama {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.header-jadwal h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #0d3d47;
+    letter-spacing: -0.5px;
+}
+
+.header-jadwal p {
+    font-size: 13px;
+    color: #4a8a96;
+    margin-top: 4px;
+}
+
+
+.layout-jadwal {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.kartu {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 0.5px solid #c8e6ea;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.kartu::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #16697A;
+    border-radius: 4px 0 0 4px;
+}
+
+.kartu:hover {
+    border-color: #16697A;
+    transform: translateX(4px);
+    box-shadow: 0 8px 24px rgba(22, 105, 122, 0.1);
+}
+
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    width: fit-content;
+}
+
+.badge-teal {
+    background: #d0f0ec;
+    color: #16697A;
+    border: 1px solid #a7ddd8;
+}
+
+
+.kartu-judul {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #0d3d47;
+    margin: 0;
+}
+
+
+.detail-jadwal {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.detail-jadwal li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    color: #4a8a96;
+}
+
+.detail-jadwal li i {
+    color: #16697A;
+    font-size: 14px;
+    width: 16px;
+    flex-shrink: 0;
+}
+
+
+.tombol-jadwal {
+    margin-top: 4px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 20px;
+    border-radius: 10px;
+    border: 1.5px solid #16697A;
+    background: transparent;
+    color: #16697A;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover {
+    background: #16697A;
+    color: #ffffff;
+}
+
+
+.layout-jadwal .kartu:first-child {
+    background: #16697A;
+    border-color: #16697A;
+}
+
+.layout-jadwal .kartu:first-child::before {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.layout-jadwal .kartu:first-child .badge-teal {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.layout-jadwal .kartu:first-child .kartu-judul {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.layout-jadwal .kartu:first-child .detail-jadwal li {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.layout-jadwal .kartu:first-child .detail-jadwal li i {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.layout-jadwal .kartu:first-child .btn {
+    background: #ffffff;
+    color: #16697A;
+    border-color: #ffffff;
+}
+
+.layout-jadwal .kartu:first-child .btn:hover {
+    background: #e0f4f6;
+}
+
+.layout-jadwal .kartu:first-child:hover {
+    transform: translateX(4px);
+    box-shadow: 0 8px 28px rgba(22, 105, 122, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .jadwal-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .konten-utama {
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 486px) {
+    .konten-utama {
+        padding: 70px 16px 24px;
+    }
+}

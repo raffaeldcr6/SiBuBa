@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f9fb;
+}
+
+.toast{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+    z-index: 9999;
+    animation: slideIn 0.4s ease, fadeOut 0.5s ease 3s forwards;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.toast.error{
+    background: #e53935;
+}
+
+.toast.success{
+    background: #2e7d32;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(120%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.login-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 40px;
+}
+
+.aksen-merah{
+    color:#e53935;
+    -webkit-text-fill-color:#e53935;
+    text-decoration:none;
+}
+
+.registrasi-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 40px;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(72, 159, 181, 0.4);
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: block;
+    max-width: 70px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 20px;
+    color: #16697A;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #777;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+input:focus {
+    border-color: #16697A;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 20px;
+}
+
+.remember-me {
+    font-size: 13px;
+}
+
+.forgot-link {
+    font-size: 13px;
+    color: #16697A;
+    text-decoration: none;
+}
+
+.registrasi-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #16697A;
+    text-decoration: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #16697A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-submit:hover {
+    background-color: #489FB5;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .form-container {
+        width: 100%;
+        max-width: 380px;
+        padding: 24px;
+    }
+
+    .login-section,
+    .registrasi-section {
+        padding: 90px 16px 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    input[type="password"] {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .btn-submit {
+        font-size: 13px;
+        padding: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .form-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .login-section,
+    .registrasi-section {
+        padding: 80px 12px 20px;
+    }
+
+    .logo {
+        max-width: 55px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .input-group {
+        margin-bottom: 12px;
+    }
+
+    .btn-submit {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .registrasi-link {
+        font-size: 12px;
+    }
+}

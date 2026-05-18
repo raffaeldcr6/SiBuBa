@@ -1,0 +1,306 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#f5f9fb,#eef4f7);
+    min-height:100vh;
+    color:#1e293b;
+}
+
+.halaman-tengah{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:40px 20px;
+}
+
+.card-tambah{
+    width:100%;
+    max-width:980px;
+    background:#ffffff;
+    border-radius:28px;
+    padding:34px;
+    border:1px solid #e4edf0;
+    box-shadow:0 14px 40px rgba(15,23,42,0.06);
+}
+
+.header-form{
+    position:relative;
+    margin-bottom:32px;
+    text-align:center;
+}
+
+.tombol-kembali{
+    position:absolute;
+    left:0;
+    top:0;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 16px;
+    border-radius:999px;
+    text-decoration:none;
+    background:#ecf7f9;
+    color:#16697A;
+    font-size:0.8rem;
+    font-weight:600;
+    transition:0.25s ease;
+}
+
+.tombol-kembali:hover{
+    background:#16697A;
+    color:white;
+    transform:translateY(-2px);
+}
+
+.header-form h2{
+    font-size:1.9rem;
+    font-weight:800;
+    color:#123640;
+    margin-bottom:6px;
+}
+
+.header-form p{
+    font-size:0.86rem;
+    color:#7b96a1;
+}
+
+.form-wrapper{
+    display:grid;
+    grid-template-columns:260px 1fr;
+    gap:26px;
+    align-items:start;
+}
+
+.preview-card{
+    background:linear-gradient(160deg,#16697A,#0d4a58);
+    border-radius:24px;
+    padding:30px 22px;
+    text-align:center;
+    color:white;
+    position:sticky;
+    top:24px;
+    overflow:hidden;
+    box-shadow:0 12px 28px rgba(22,105,122,0.25);
+}
+
+.preview-avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.18);
+    border:3px solid rgba(255,255,255,0.35);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 16px;
+    font-size:1.8rem;
+    font-weight:700;
+    color:white;
+    overflow:hidden;
+}
+
+.preview-foto{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.preview-card h3{
+    font-size:1rem;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.preview-card p{
+    font-size:0.76rem;
+    opacity:0.85;
+    margin-bottom:18px;
+}
+
+.preview-info{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.preview-badge{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:9px 12px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.12);
+    font-size:0.78rem;
+}
+
+.form-card{
+    background:#f8fbfc;
+    border-radius:24px;
+    padding:28px;
+    border:1px solid #e4edf0;
+}
+
+.grup-input{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    margin-bottom:18px;
+}
+
+.grup-input label{
+    font-size:0.8rem;
+    font-weight:600;
+    color:#2b5f6a;
+}
+
+.input-field{
+    width:100%;
+    padding:12px 14px;
+    border-radius:12px;
+    border:1.5px solid #d8e6ea;
+    background:white;
+    font-size:0.84rem;
+    font-family:'Poppins',sans-serif;
+    color:#1a3c45;
+    outline:none;
+    transition:0.2s ease;
+}
+
+.input-field:focus{
+    border-color:#16697A;
+    box-shadow:0 0 0 4px rgba(22,105,122,0.1);
+}
+
+textarea.input-field{
+    resize:none;
+    min-height:100px;
+}
+
+.baris-dua-kolom{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+}
+
+.aksi-form{
+    margin-top:10px;
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+}
+
+.tombol-batal{
+    padding:11px 18px;
+    border-radius:12px;
+    background:#edf3f5;
+    color:#5f7a82;
+    text-decoration:none;
+    font-size:0.82rem;
+    font-weight:600;
+    transition:0.2s ease;
+}
+
+.tombol-batal:hover{
+    background:#dfeaec;
+}
+
+.tombol-simpan{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:11px 24px;
+    border:none;
+    border-radius:12px;
+    background:#16697A;
+    color:white;
+    font-size:0.82rem;
+    font-weight:600;
+    font-family:'Poppins',sans-serif;
+    cursor:pointer;
+    transition:0.25s ease;
+}
+
+.tombol-simpan:hover{
+    background:#104f5d;
+    transform:translateY(-2px);
+}
+
+.tombol-hapus{
+    padding:11px 18px;
+    border-radius:12px;
+    background:#e74c3c;
+    color:white;
+    text-decoration:none;
+    font-size:0.82rem;
+    font-weight:600;
+    transition:0.25s ease;
+}
+
+.tombol-hapus:hover{
+    background:#c0392b;
+}
+
+@media(max-width:1024px){
+    .card-tambah{
+        max-width:100%;
+        padding:28px;
+    }
+
+    .form-wrapper{
+        grid-template-columns:220px 1fr;
+        gap:20px;
+    }
+}
+
+@media(max-width:900px){
+    .form-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .preview-card{
+        position:static;
+    }
+}
+
+@media(max-width:768px){
+    .halaman-tengah{
+        padding:20px 14px;
+    }
+
+    .baris-dua-kolom{
+        grid-template-columns:1fr;
+    }
+
+    .aksi-form{
+        flex-direction:column;
+    }
+
+    .tombol-batal,
+    .tombol-simpan,
+    .tombol-hapus{
+        width:100%;
+        text-align:center;
+    }
+}
+
+@media(max-width:486px){
+    .card-tambah{
+        padding:18px 14px;
+        border-radius:18px;
+    }
+
+    .header-form h2{
+        font-size:1.25rem;
+    }
+
+    .header-form p{
+        font-size:0.76rem;
+    }
+}
