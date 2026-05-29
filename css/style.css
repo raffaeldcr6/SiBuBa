@@ -1338,3 +1338,1342 @@ td.aksi {
     background-color: #16697A;
     border: none;
     color: white;
+}
+
+.kartu-tips h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.kartu-tips p {
+    font-size: 13px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.daftar-aktivitas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.daftar-aktivitas li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.titik {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.titik.merah {
+    background-color: #a31616;
+}
+
+.item-anak {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.item-anak:hover {
+    background-color: #f5f9fb;
+}
+
+.avatar-anak {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.avatar-anak.teal {
+    background-color: #d0f0ec;
+    color: #16697A;
+}
+
+.nama-anak {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.usia-anak {
+    font-size: 11px;
+    color: #aaa;
+}
+
+.belum-anak {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.foto-anak {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d7ecef;
+}
+
+/* ================================================================
+   DASHBOARD PENGGUNA - JADWAL, STATUS, AKTIVITAS
+   ================================================================ */
+
+.dashboard-jadwal-box{
+    margin-top:12px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    border-radius:14px;
+    padding:14px;
+}
+
+.dashboard-jadwal-nama{
+    font-size:14px;
+    font-weight:800;
+    color:#0f172a;
+    line-height:1.5;
+    margin-bottom:10px;
+}
+
+.dashboard-jadwal-detail{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:8px;
+}
+
+.dashboard-jadwal-detail span{
+    display:inline-flex;
+    align-items:center;
+    padding:5px 10px;
+    border-radius:999px;
+    background:#fff7ed;
+    color:#f97316;
+    font-size:11px;
+    font-weight:800;
+}
+
+.dashboard-jadwal-lokasi{
+    font-size:12px;
+    color:#64748b;
+    line-height:1.5;
+}
+
+.dashboard-status-box{
+    margin-top:12px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    border-radius:14px;
+    padding:14px;
+}
+
+.dashboard-status-orang{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+}
+
+.status-avatar{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#dcfce7;
+    color:#15803d;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    font-weight:800;
+    flex-shrink:0;
+}
+
+.dashboard-status-orang p{
+    font-size:13px;
+    font-weight:800;
+    color:#0f172a;
+    margin:0;
+}
+
+.dashboard-status-orang small{
+    font-size:11px;
+    color:#64748b;
+}
+
+.dashboard-status-badge{
+    display:inline-flex;
+    width:max-content;
+    padding:6px 12px;
+    border-radius:999px;
+    background:#dcfce7;
+    color:#15803d;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.dashboard-aktivitas-list{
+    margin-top:14px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.dashboard-aktivitas-item{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    position:relative;
+}
+
+.aktivitas-dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#16697A;
+    margin-top:6px;
+    flex-shrink:0;
+    box-shadow:0 0 0 5px #e6f7f4;
+}
+
+.aktivitas-dot.merah{
+    background:#dc2626;
+    box-shadow:0 0 0 5px #fee2e2;
+}
+
+.dashboard-aktivitas-item p{
+    font-size:13px;
+    font-weight:700;
+    color:#0f172a;
+    margin:0 0 3px;
+    line-height:1.5;
+}
+
+.dashboard-aktivitas-item small{
+    font-size:11px;
+    color:#64748b;
+    line-height:1.5;
+}
+
+/* ================================================================
+   BOOKING BALITA
+   ================================================================ */
+
+.booking-wrapper{
+    min-height:100vh;
+    background:#f5f9fb;
+    font-family:'Poppins',sans-serif;
+}
+
+.booking-wrapper .konten-utama{
+    max-width:1080px;
+    margin:0 auto;
+    padding:36px 24px;
+}
+
+.booking-card{
+    background:#ffffff;
+    border:1px solid #dbeaf0;
+    border-radius:22px;
+    padding:28px;
+    box-shadow:0 10px 28px rgba(15,23,42,.05);
+}
+
+.grid-anak{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:18px;
+    margin-bottom:24px;
+}
+
+.kartu-anak{
+    position:relative;
+    border:1px solid #e2e8f0;
+    border-radius:18px;
+    padding:18px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    cursor:pointer;
+    background:#ffffff;
+    transition:.25s ease;
+}
+
+.kartu-anak:hover{
+    border-color:#70C1B3;
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px rgba(15,23,42,.06);
+}
+
+.kartu-anak input{
+    accent-color:#16697A;
+}
+
+.kartu-anak:has(input:checked){
+    border-color:#16697A;
+    background:#f0fdfa;
+    box-shadow:0 10px 24px rgba(22,105,122,.10);
+}
+
+.booking-wrapper .avatar-anak{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:#d0f0ec;
+    color:#16697A;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    font-size:15px;
+    flex-shrink:0;
+}
+
+.kartu-anak h3{
+    font-size:16px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:4px;
+}
+
+.kartu-anak p{
+    font-size:12px;
+    color:#64748b;
+}
+
+.booking-submit{
+    display:flex;
+    justify-content:flex-end;
+    padding-top:20px;
+    border-top:1px solid #e2e8f0;
+}
+
+.btn-primary{
+    border:none;
+    border-radius:14px;
+    background:#16697A;
+    color:#ffffff;
+    padding:13px 22px;
+    font-size:13px;
+    font-weight:800;
+    cursor:pointer;
+    font-family:'Poppins',sans-serif;
+    box-shadow:0 8px 18px rgba(22,105,122,.18);
+}
+
+.btn-primary:hover{
+    background:#0f5664;
+}
+
+.empty-state{
+    text-align:center;
+    padding:36px 20px;
+    background:#f8fafc;
+    border:1px dashed #cbd5e1;
+    border-radius:18px;
+}
+
+.empty-state p{
+    margin-bottom:16px;
+    color:#64748b;
+    font-size:13px;
+}
+
+.empty-state a{
+    display:inline-flex;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:14px;
+    background:#16697A;
+    color:#ffffff;
+    font-size:13px;
+    font-weight:800;
+}
+
+/* ================================================================
+   9. Data Kesehatan
+   ================================================================ */
+.kesehatan-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: #f5f9fb;
+}
+
+.kesehatan-wrapper .konten-utama {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
+    padding: 28px;
+}
+
+.banner {
+    width: 100%;
+    background: linear-gradient(135deg, #16697A, #2b8c9f);
+    border-radius: 24px;
+    padding: 38px 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(22, 105, 122, 0.18);
+}
+
+.banner-teks {
+    flex: 1;
+}
+
+.banner-teks h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+
+.banner-teks p {
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+.banner-gambar {
+    flex-shrink: 0;
+}
+
+.banner-gambar img {
+    width: 180px;
+    object-fit: contain;
+    display: block;
+}
+
+.kesehatan-wrapper .grid-anak {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.kesehatan-wrapper .kartu-anak {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 22px;
+    border: 1px solid #edf2f7;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+    transition: 0.25s ease;
+    display: block;
+}
+
+.kesehatan-wrapper .kartu-anak:hover {
+    transform: translateY(-4px);
+}
+
+.kartu-anak.kosong {
+    background: #ffffff;
+    border: 2px dashed #cbd5e1;
+    border-radius: 22px;
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.kartu-anak.kosong p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.kartu-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.kesehatan-wrapper .avatar-anak {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    background: #d0f0ec;
+    color: #16697A;
+    font-size: 1rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.kesehatan-wrapper .foto-anak {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    object-fit: cover;
+    border: 2px solid #d7ecef;
+    flex-shrink: 0;
+}
+
+.kesehatan-wrapper .nama-anak {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+.kesehatan-wrapper .usia-anak {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.76rem;
+    color: #94a3b8;
+}
+
+.icon-detail {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.kartu-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.stat-item {
+    background: #f8fbfc;
+    border: 1px solid #edf2f7;
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.kesehatan-wrapper .stat-label {
+    display: block;
+    font-size: 0.62rem;
+    color: #94a3b8;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.kesehatan-wrapper .stat-nilai {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #1e293b;
+}
+
+.kartu-aksi {
+    display: flex;
+    gap: 10px;
+}
+
+.tombol-detail {
+    flex: 1;
+    padding: 11px;
+    border-radius: 12px;
+    background: #16697A;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.84rem;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.tombol-detail:hover {
+    background: #135766;
+}
+
+.kartu-tambah {
+    min-height: 230px;
+    border-radius: 22px;
+    border: 2px dashed #c9dbe1;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 24px;
+    transition: 0.25s ease;
+}
+
+.kartu-tambah:hover {
+    transform: translateY(-4px);
+    border-color: #16697A;
+    background: #f8fbfc;
+}
+
+.tombol-tambah-ikon {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #eef6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.icon-tambah {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.tambah-judul {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 4px;
+}
+
+.tambah-sub {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* ================================================================
+   10. Data Peserta (Admin)
+   ================================================================ */
+.search-top {
+    width: 260px;
+    height: 34px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    color: #64748b;
+}
+
+.search-top input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 12px;
+}
+
+.peserta-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #dbe4e8;
+    border-top: 4px solid #16697A;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+}
+
+.tabs {
+    display: flex;
+    gap: 24px;
+    padding: 14px 22px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tab {
+    border: none;
+    background: transparent;
+    padding: 0 0 12px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tab.aktif {
+    color: #16697A;
+    border-bottom: 3px solid #16697A;
+}
+
+.filter-row {
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.search-box {
+    width: 260px;
+    height: 36px;
+    border: 1px solid #9bdbe2;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    color: #64748b;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 12px;
+}
+
+.filter-row select {
+    height: 36px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    padding: 0 12px;
+    background: white;
+    font-size: 12px;
+    color: #334155;
+}
+
+.btn-filter {
+    margin-left: auto;
+    height: 36px;
+    padding: 0 14px;
+    border: 1px solid #cbd5e1;
+    background: white;
+    border-radius: 7px;
+    color: #334155;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.peserta-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.inisial {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #b7eef6;
+    color: #16697A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.badge-jk {
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.badge-jk.laki    { background: #b7eef6; color: #16697A; }
+.badge-jk.perempuan { background: #ffd9df; color: #dc2626; }
+
+.empty-data {
+    text-align: center;
+    padding: 24px;
+    color: #94a3b8;
+}
+
+
+/* ================================================================
+   11. Data Balita & Pemeriksaan (Kader)
+   ================================================================ */
+.aksi-bar {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.form-cari {
+    flex: 1;
+    display: flex;
+    gap: 16px;
+}
+
+.cari-wrap {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.cari-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.cari-input-row {
+    display: flex;
+    align-items: center;
+}
+
+.cari-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #1e293b;
+    background: transparent;
+}
+
+.cari-input::placeholder {
+    color: #cbd5e1;
+}
+
+.cell-anak {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.data-balita .foto-anak,
+.info-balita-card .foto-anak {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d0f0ec;
+    flex-shrink: 0;
+}
+
+.foto-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #d0f0ec;
+    color: #00594C;
+    font-weight: 800;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nik-anak {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+.badge-gender {
+    display: inline-flex;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.badge-laki     { background: #dbeafe; color: #1d4ed8; }
+.badge-perempuan { background: #fce7f3; color: #be185d; }
+
+.hasil-pemeriksaan {
+    display: block;
+    max-width: 240px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.status-gizi {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot-hijau { background: #16a34a; }
+.dot-merah { background: #dc2626; }
+.gizi-baik  { color: #16a34a; }
+.gizi-buruk { color: #dc2626; }
+
+.aksi-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-edit  { background: #fff7ed; border-color: #fed7aa; color: #ea580c; }
+.btn-hapus { background: #fff1f1; border-color: #fecaca; color: #dc2626; }
+
+.icon-aksi {
+    width: 15px;
+    height: 15px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+}
+
+.empty-state p {
+    font-size: 13px;
+}
+
+.kolom-aksi {
+    text-align: right;
+    padding-right: 22px;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 260px));
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.summary-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    border-top: 4px solid #16697A;
+}
+
+.summary-val {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1;
+}
+
+.summary-label {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+.form-pemeriksaan-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 24px;
+    max-width: 760px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.info-balita-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #f8fafc;
+    margin-bottom: 22px;
+}
+
+.info-balita-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.info-balita-card p {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 3px;
+}
+
+.form-pemeriksaan-card .grup-input {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.form-pemeriksaan-card label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+}
+
+.form-pemeriksaan-card .input-field {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #d7ecef;
+    background: #ffffff;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: #1e293b;
+    outline: none;
+}
+
+.form-pemeriksaan-card .input-field:focus {
+    border-color: #16697A;
+}
+
+.form-pemeriksaan-card textarea.input-field {
+    resize: none;
+    min-height: 130px;
+}
+
+.form-pemeriksaan-card .aksi-form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.form-pemeriksaan-card .tombol-batal,
+.form-pemeriksaan-card .tombol-simpan {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-pemeriksaan-card .tombol-batal {
+    background: #ffffff;
+    border: 1px solid #d7ecef;
+    color: #64748b;
+}
+
+.form-pemeriksaan-card .tombol-simpan {
+    border: none;
+    background: #16697A;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.status-imunisasi {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.badge-imunisasi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.badge-sudah { background: #dcfce7; color: #15803d; }
+.badge-belum { background: #fee2e2; color: #dc2626; }
+
+.status-imunisasi small {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+
+/* ================================================================
+   12. Jadwal Admin
+   ================================================================ */
+.jadwal-admin .search-box {
+    width: 320px;
+    border-radius: 20px;
+    padding: 0 14px;
+}
+
+.jadwal-admin .search-box i {
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.jadwal-admin .search-box input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #1e293b;
+}
+
+.td-nomor {
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nama-kegiatan {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.ket-kegiatan {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+.tgl-wrap,
+.jam-wrap,
+.lokasi-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #475569;
+}
+
+.tgl-wrap i    { color: #70C1B3; }
+.jam-wrap i    { color: #70C1B3; }
+.lokasi-wrap i { color: #ea580c; }
+
+.kader-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.kader-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #d0f0ec;
+    color: #16697A;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.badge-mendatang { background: #e6f7f4; color: #00594C; }
+.badge-hari-ini  { background: #fef3c7; color: #b45309; }
+.badge-lewat     { background: #f1f5f9; color: #64748b; }
+
+
+/* ================================================================
+   13. Jadwal Kader
+   ================================================================ */
+.jadwal-form-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.form-card-header {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #00594C;
+}
+
+.form-grid-jadwal {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+}
+
+.wajib   { color: #ef4444; }
+.opsional { color: #94a3b8; font-weight: 500; }
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #d7ecef;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: #0f172a;
+    outline: none;
+    background: #ffffff;
+}
+
+.form-group textarea {
+    resize: none;
+    min-height: 92px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #16697A;
+}
+
+.form-aksi {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.btn-batal,
+.btn-simpan {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-batal {
+    background: #ffffff;
+    color: #64748b;
+    border: 1px solid #d7ecef;
+}
+
+.btn-simpan {
+    border: none;
+    background: #16697A;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.alert {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.alert-sukses {
+    color: #16697A;
+    background: #ecfdf5;
+    border-color: #bbf7d0;
+}
+
+.alert-gagal {
+    color: #dc2626;
+    background: #fff1f2;
+    border-color: #fecdd3;
+}
+
+.badge-kategori,
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.badge-kategori.balita { background: #dbeafe; color: #1d4ed8; }
+.badge-kategori.bumil  { background: #fce7f3; color: #be185d; }
+.badge-kategori.semua  { background: #d0f0ec; color: #00594C; }
+
+
+/* ================================================================
+   14. Jadwal Posyandu (Pengguna)
+   ================================================================ */
+.jadwal-wrapper {
+    min-height: 100vh;
+}
+
+.header-jadwal {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 22px;
+}
+
+.header-jadwal h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.deskripsi {
+    font-size: 13px;
