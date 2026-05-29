@@ -14,16 +14,27 @@ if (isset($_POST['reset'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $confirm = $_POST['confirm'];
+        if (strlen($password) < 6) {
 
-    if ($password != $confirm) {
-        echo "
-        <script>
-            alert('Konfirmasi password tidak sama!');
-            window.location='index.php?page=lupa_password';
-        </script>
-        ";
-        exit;
-    }
+            echo "
+            <script>
+                alert('Password minimal 6 karakter!');
+                window.location='index.php?page=register';
+            </script>
+            ";
+            exit;
+        }
+
+        if ($password != $confirm) {
+
+            echo "
+            <script>
+                alert('Konfirmasi password tidak sama!');
+                window.location='index.php?page=register';
+            </script>
+            ";
+            exit;
+        }
 
     $user = $userModel->cekEmail($email);
 
