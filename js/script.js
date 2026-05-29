@@ -15,9 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-/* =========================
-   Navbar Landing Mobile
-========================= */
 
 function initLandingMenu() {
 
@@ -44,9 +41,7 @@ function initLandingMenu() {
 
 }
 
-/* =========================
-   Sidebar Mobile
-========================= */
+
 
 function initSidebar() {
 
@@ -89,9 +84,7 @@ function initSidebar() {
 
 }
 
-/* =========================
-   Navbar Scroll
-========================= */
+
 
 function initNavbarScroll() {
 
@@ -110,9 +103,7 @@ function initNavbarScroll() {
 
 }
 
-/* =========================
-   Login Form
-========================= */
+
 
 function initLoginForm() {
 
@@ -161,9 +152,7 @@ function initLoginForm() {
 
 }
 
-/* =========================
-   Register Form
-========================= */
+
 
 function initRegisterForm() {
 
@@ -204,9 +193,7 @@ function initRegisterForm() {
 
 }
 
-/* =========================
-   Toast
-========================= */
+
 
 function showToast(message, type) {
 
@@ -223,9 +210,7 @@ function showToast(message, type) {
 
 }
 
-/* =========================
-   Preview Tambah Anak
-========================= */
+
 
 function initPreviewAnak() {
 
@@ -314,9 +299,7 @@ function initPreviewAnak() {
 
 }
 
-/* =========================
-   Auto Submit Search
-========================= */
+
 
 function initSearchTable() {
 
@@ -344,9 +327,7 @@ function initSearchTable() {
 
 }
 
-/* =========================
-   Pagination User
-========================= */
+
 
 function initPaginationUser() {
 
@@ -415,9 +396,7 @@ function initPaginationUser() {
 
 }
 
-/* =========================
-   Status Hamil
-========================= */
+
 
 function initStatusHamil() {
 
@@ -442,9 +421,7 @@ function initStatusHamil() {
 
 }
 
-/* =========================
-   Preview Foto Profil
-========================= */
+
 
 function initPreviewFotoProfil() {
 
@@ -479,9 +456,7 @@ function initPreviewFotoProfil() {
 
 }
 
-/* =========================
-   Confirm Delete
-========================= */
+
 
 function confirmDelete(url) {
 
@@ -493,9 +468,7 @@ function confirmDelete(url) {
 
 }
 
-/* =========================
-   Data Peserta (Admin)
-========================= */
+
 
 function initDataPeserta() {
 
@@ -507,10 +480,10 @@ function initDataPeserta() {
     const filterUrut     = document.getElementById("filterUrutPeserta");
     const infoPeserta    = document.getElementById("infoPeserta");
 
-    // Keluar jika elemen tidak ada (halaman lain)
+    
     if (!tabBalita || !tabIbu) return;
 
-    // ── Tab switching ──────────────────────────────────────
+    
     tabBalita.addEventListener("click", function () {
         tabBalita.classList.add("aktif");
         tabIbu.classList.remove("aktif");
@@ -527,7 +500,7 @@ function initDataPeserta() {
         terapkanFilter();
     });
 
-    // ── Pencarian & urutan ─────────────────────────────────
+    
     if (inputCari)  inputCari.addEventListener("input",  terapkanFilter);
     if (filterUrut) filterUrut.addEventListener("change", terapkanFilter);
 
@@ -536,7 +509,7 @@ function initDataPeserta() {
         const kata = inputCari ? inputCari.value.toLowerCase().trim() : "";
         const urut = filterUrut ? filterUrut.value : "";
 
-        // Pilih tabel yang sedang aktif
+        
         const tabelAktif = panelBalita.classList.contains("hidden")
             ? document.getElementById("tabelIbu")
             : document.getElementById("tabelBalita");
@@ -546,13 +519,13 @@ function initDataPeserta() {
         const tbody = tabelAktif.querySelector("tbody");
         const baris = Array.from(tbody.querySelectorAll("tr"));
 
-        // Filter teks
+        
         baris.forEach(function (tr) {
             const teks = tr.innerText.toLowerCase();
             tr.style.display = teks.includes(kata) ? "" : "none";
         });
 
-        // Urutan nama
+        
         if (urut === "az" || urut === "za") {
 
             const terlihat = baris.filter(function (tr) {
@@ -571,7 +544,7 @@ function initDataPeserta() {
 
         }
 
-        // Update info jumlah
+        
         if (infoPeserta) {
             const tampil = baris.filter(function (tr) {
                 return tr.style.display !== "none";
@@ -582,14 +555,12 @@ function initDataPeserta() {
 
     }
 
-    // Jalankan sekali saat load untuk set info awal
+    
     terapkanFilter();
 
 }
 
-/* =========================
-   Download CSV
-========================= */
+
 
 function initDownloadCSV() {
 
@@ -634,14 +605,14 @@ function initDownloadCSV() {
 }
 
 
-// Tab switching
+
 document.querySelectorAll('.tab-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
-        // Remove aktif dari semua tombol & konten
+        
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('aktif'));
         document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('aktif'));
 
-        // Aktifkan tab yang diklik
+        
         btn.classList.add('aktif');
         document.getElementById(btn.dataset.tab).classList.add('aktif');
     });
