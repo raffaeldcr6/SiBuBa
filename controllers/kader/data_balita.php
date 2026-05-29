@@ -10,56 +10,101 @@ if (!isset($_SESSION['login']) || $_SESSION['user']['role'] != 'kader') {
 }
 
 include 'koneksi.php';
-require_once 'models/anakmodel.php';
-
-$anakModel = new AnakModel($koneksi);
-
-$user_id = $_SESSION['user']['id'];
 
 if (isset($_GET['hapus'])) {
-    include 'controllers/kader/hapus_anak.php';
+
+    $hapus_id = (int) $_GET['hapus'];
+
+    mysqli_query(
+        $koneksi,
+        "DELETE FROM anak
+        WHERE id='$hapus_id'"
+    );
+
+    echo "
+    <script>
+        alert('Data balita berhasil dihapus!');
+        window.location='index.php?page=data_balita';
+    </script>
+    ";
     exit;
-}
-
-if (isset($_GET['edit'])) {
-    include 'controllers/kader/edit_anak.php';
-    exit;
-}
-
-$queryBalita = $anakModel->getDataAnakLengkap(null);
-
-$dataBalita   = [];
-$totalBalita  = 0;
-$giziBaikCount = 0;
-
-while ($row = mysqli_fetch_assoc($queryBalita)) {
-    $dataBalita[] = $row;
-    $totalBalita++;
-
-    $status = strtolower($row['status_gizi'] ?? '');
-    if ($status == 'baik' || $status == 'sangat baik') {
-        $giziBaikCount++;
-    }
 }
 
 $cari = trim($_GET['cari'] ?? '');
 
-if ($cari !== '') {
-    $dataBalita = array_filter($dataBalita, function ($row) use ($cari) {
-        $cariLower = strtolower($cari);
-        return str_contains(strtolower($row['nama_anak'] ?? ''), $cariLower)
-            || str_contains($row['nik_anak'] ?? '', $cari);
-    });
-    $dataBalita = array_values($dataBalita);
+$where = "";
+
+if ($cari != '') {
+
+    $cariEsc = mysqli_real_escape_string($koneksi, $cari);
+
+    $where = "
+    WHERE
+    a.nama_anak LIKE '%$cariEsc%'
+    OR a.nik_anak LIKE '%$cariEsc%'
+    OR u.nama LIKE '%$cariEsc%'
+    ";
 }
 
-$perHalaman  = 10;
-$halamanNow  = max(1, (int)($_GET['hal'] ?? 1));
-$totalItem   = count($dataBalita);
-$totalHalaman = max(1, (int)ceil($totalItem / $perHalaman));
-$halamanNow  = min($halamanNow, $totalHalaman);
+$queryBalita = mysqli_query(
+    $koneksi,
+    "SELECT
+        a.*,
+        u.nama AS nama_ibu,
+        TIMESTAMPDIFF(YEAR, a.tanggal_lahir, CURDATE()) AS umur_tahun,
+        TIMESTAMPDIFF(MONTH, a.tanggal_lahir, CURDATE()) AS umur_bulan
+    FROM anak a
+    LEFT JOIN users u ON a.user_id = u.id
+    $where
+    ORDER BY a.id DESC"
+);
 
-$offset      = ($halamanNow - 1) * $perHalaman;
-$dataHalaman = array_slice($dataBalita, $offset, $perHalaman);
+$dataJadwal = [];
+
+while ($row = mysqli_fetch_assoc($queryBalita)) {
+    $dataJadwal[] = $row;
+}
+
+$totalItem = count($dataJadwal);
+
+$giziBaikCount = 0;
+
+foreach ($dataJadwal as $anak) {
+
+    $statusGizi = strtolower(trim($anak['status_gizi'] ?? ''));
+
+    if ($statusGizi == 'baik') {
+        $giziBaikCount++;
+    }
+}
+
+$totalBalita = $totalItem;
+
+$perHalaman = 10;
+
+$halamanNow = max(
+    1,
+    (int)($_GET['hal'] ?? 1)
+);
+
+$totalHalaman = max(
+    1,
+    (int)ceil($totalItem / $perHalaman)
+);
+
+$halamanNow = min(
+    $halamanNow,
+    $totalHalaman
+);
+
+$offset = ($halamanNow - 1) * $perHalaman;
+
+$dataHalaman = array_slice(
+    $dataJadwal,
+    $offset,
+    $perHalaman
+);
 
 include 'views/kader/data_balita.php';
+
+?>
