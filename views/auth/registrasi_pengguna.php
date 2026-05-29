@@ -6,8 +6,7 @@
 
     <title>SiBuba - Registrasi</title>
 
-    <link rel="stylesheet" href="css/loginregist_pengguna.css">
-    <link rel="stylesheet" href="css/navbar_landingpage.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
@@ -22,7 +21,7 @@
     <div class="form-container">
 
         <div class="header-content">
-            <img src="image/bumil.png" alt="Logo" class="logo">
+            <img src="assets/images/bumil.png" alt="Logo" class="logo">
             <h2>Registrasi Akun</h2>
             <p class="subtitle">Silahkan isi data diri Anda</p>
         </div>
@@ -56,12 +55,12 @@
 
             <div class="input-group">
                 <label>Password</label>
-                <input type="password" name="password" required>
+                <input type="password" name="password" minlength="6" required>
             </div>
 
             <div class="input-group">
                 <label>Konfirmasi Password</label>
-                <input type="password" name="confirm" required>
+                <input type="password" name="confirm" minlength="6" required>
             </div>
 
             <button type="submit" name="register" class="btn-submit">
