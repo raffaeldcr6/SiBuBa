@@ -57,6 +57,14 @@ switch($page){
         include 'controllers/pengguna/edit_anak.php';
         break;
 
+    case 'edit_peserta_admin':
+        include 'controllers/admin/edit_peserta_admin.php';
+        break;
+
+    case 'update_peserta_admin':
+        include 'controllers/admin/update_peserta_admin.php';
+        break;
+
     case 'hapus_user':
         include 'controllers/admin/hapus_user.php';
         break;
