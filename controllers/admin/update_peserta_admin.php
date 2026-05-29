@@ -20,7 +20,7 @@ if (!$id || !in_array($tipe, ['anak', 'ibu'])) {
     exit;
 }
 
-// ===== UPDATE BALITA =====
+
 if ($tipe === 'anak') {
 
     $anakModel = new AnakModel($koneksi);
@@ -68,7 +68,7 @@ if ($tipe === 'anak') {
         echo "<script>alert('Gagal mengupdate data balita!'); window.history.back();</script>";
     }
 
-// ===== UPDATE IBU HAMIL =====
+
 } else {
 
     $nama   = mysqli_real_escape_string($koneksi, $_POST['nama']);
