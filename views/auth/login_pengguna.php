@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiBuba - Login</title>
-
-    <link rel="stylesheet" href="css/loginregist_pengguna.css">
-    <link rel="stylesheet" href="css/navbar_landingpage.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
@@ -21,7 +17,7 @@
     <div class="form-container">
 
         <div class="header-content">
-            <img src="image/bumil.png" alt="Logo" class="logo">
+            <img src="assets/images/bumil.png" alt="Logo" class="logo">
             <h2>Selamat Datang</h2>
             <p class="subtitle">
                 Silahkan masukkan data untuk masuk
@@ -37,13 +33,19 @@
 
             <div class="input-group">
                 <label>Password</label>
-                <input type="password" name="password" required>
+                <input type="password" name="password" minlength="6" required>
+            </div>
+
+            <div class="lupa-password">
+                <a href="index.php?page=lupa_password">
+                    Lupa Password?
+                </a>
             </div>
 
             <button type="submit" name="login" class="btn-submit">
                 Masuk
             </button>
-    
+            
             <p class="registrasi-link">
                 Belum punya akun?
                 <a href="index.php?page=register" class="aksen-merah">
