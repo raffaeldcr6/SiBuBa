@@ -11,16 +11,30 @@ $userModel = new UserModel($koneksi);
 
 if (isset($_POST['register'])) {
 
-    if ($_POST['password'] != $_POST['confirm']) {
+    $password = trim($_POST['password']);
+$confirm  = trim($_POST['confirm']);
 
-        echo "
-        <script>
-            alert('Konfirmasi password tidak sama!');
-            window.location='index.php?page=register';
-        </script>
-        ";
-        exit;
-    }
+        if (strlen($password) < 6) {
+
+            echo "
+            <script>
+                alert('Password minimal 6 karakter!');
+                window.location='index.php?page=register';
+            </script>
+            ";
+            exit;
+        }
+
+        if ($password != $confirm) {
+
+            echo "
+            <script>
+                alert('Konfirmasi password tidak sama!');
+                window.location='index.php?page=register';
+            </script>
+            ";
+            exit;
+        }
 
     $register = $userModel->register($_POST);
 
