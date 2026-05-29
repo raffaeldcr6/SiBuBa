@@ -32,8 +32,8 @@
             Jadwal
         </a>
 
-        <a href="controllers/logout.php">
-            <i class="fa-solid fa-right-from-bracket"></i>
+        <a href="index.php?page=login_pengguna.php" class="menu-item keluar">
+            <img src="assets/icons/logout.svg" class="icon-sidebar">
             Keluar
         </a>
     </nav>
