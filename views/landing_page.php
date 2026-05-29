@@ -5,10 +5,7 @@
         <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
         <title>Sibuba - Kelompok 6</title>
-        <link rel="stylesheet" href="css/landing_page.css">
-        <link rel="stylesheet" href="css/navbar_landingpage.css">
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
         rel="stylesheet">
     </head>
@@ -39,7 +36,7 @@
         </div>
 
         <div class="visual-beranda">
-            <img src="image/bumil.png"
+            <img src="assets/images/bumil.png"
             alt="Ilustrasi Keluarga Sehat">
         </div>
     </section>
