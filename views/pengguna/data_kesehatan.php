@@ -17,9 +17,7 @@ if (!isset($_SESSION['user'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiBuba - Data Kesehatan</title>
 
-    <link rel="stylesheet" href="css/data_kesehatan.css">
-    <link rel="stylesheet" href="css/sidebar_pengguna.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
@@ -29,7 +27,7 @@ if (!isset($_SESSION['user'])) {
 
     <?php include 'views/components/sidebar_pengguna.php'; ?>
 
-    <section class="konten-utama">
+    <main class="konten-utama">
 
         <article class="banner">
             <div class="banner-teks">
@@ -38,7 +36,7 @@ if (!isset($_SESSION['user'])) {
             </div>
 
             <div class="banner-gambar">
-                <img src="image/bumil.png" alt="Ibu dan Anak">
+                <img src="assets/images/bumil.png" alt="Ibu dan Anak">
             </div>
         </article>
 
@@ -63,10 +61,9 @@ if (!isset($_SESSION['user'])) {
                             <?php if(!empty($anak['foto'])): ?>
 
                                 <img 
-                                    src="uploads/<?= $anak['foto']; ?>" 
-                                    alt="<?= $anak['nama_anak']; ?>"
-                                    class="foto-anak"
-                                >
+                                src="assets/uploads/<?= $anak['foto']; ?>" 
+                                alt="<?= $anak['nama_anak']; ?>"
+                                class="foto-anak">
 
                             <?php else: ?>
 
@@ -82,8 +79,13 @@ if (!isset($_SESSION['user'])) {
                                 </h3>
 
                                 <span class="usia-anak">
-                                    <i class="fa-regular fa-user"></i>
+
+                                    <img
+                                    src="assets/icons/child.svg"
+                                    class="icon-detail">
+
                                     <?= $umur; ?>
+
                                 </span>
                             </div>
 
@@ -131,9 +133,13 @@ if (!isset($_SESSION['user'])) {
 
             <a href="index.php?page=tambah_anak" class="kartu-tambah">
 
-                <div class="tombol-tambah-ikon">
-                    <i class="fa-solid fa-plus"></i>
-                </div>
+            <div class="tombol-tambah-ikon">
+
+                <img
+                src="assets/icons/plus.svg"
+                class="icon-tambah">
+
+            </div>
 
                 <p class="tambah-judul">
                     Tambah Data Anak
@@ -147,61 +153,7 @@ if (!isset($_SESSION['user'])) {
 
         </section>
 
-        <section class="bagian-bawah">
-
-            <section class="aktivitas">
-
-                <h3 class="judul-seksi">
-                    Aktivitas Terakhir
-                </h3>
-
-                <article class="aktivitas-item">
-
-                    <div class="aktivitas-ikon ikon-biru">
-                        <i class="fa-regular fa-calendar-check"></i>
-                    </div>
-
-                    <div class="aktivitas-info">
-                        <p class="aktivitas-judul">
-                            Belum ada aktivitas
-                        </p>
-
-                        <p class="aktivitas-meta">
-                            Data pemeriksaan akan muncul di sini
-                        </p>
-                    </div>
-
-                    <span class="badge-selesai">
-                        -
-                    </span>
-
-                </article>
-
-            </section>
-
-            <article class="tips-nutrisi">
-
-                <div class="tips-ikon">
-                    <i class="fa-regular fa-lightbulb"></i>
-                </div>
-
-                <h4>
-                    Tips Nutrisi Hari Ini
-                </h4>
-
-                <p>
-                    Pemberian ASI Eksklusif sangat penting untuk perkembangan otak dan sistem imun bayi di 6 bulan pertama.
-                </p>
-
-                <a href="index.php?page=edukasi" class="tombol-baca">
-                    Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </article>
-
-        </section>
-
-    </section>
+    </main>
 
 </div>
 
