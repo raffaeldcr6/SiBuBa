@@ -24,12 +24,20 @@ if (isset($_POST['login'])) {
         $_SESSION['role'] = $user['role'];
         $_SESSION['login'] = true;
 
+        $_SESSION['expire_time'] = time() + 300;
+
         if ($user['role'] == 'admin') {
-            header("Location: index.php?page=dashboard_admin");
+
+            header("Location:index.php?page=dashboard_admin");
+
         } elseif ($user['role'] == 'kader') {
-            header("Location: index.php?page=dashboard_kader");
+
+            header("Location:index.php?page=dashboard_kader");
+
         } else {
-            header("Location: index.php?page=dashboard_pengguna");
+
+            header("Location:index.php?page=dashboard_pengguna");
+
         }
 
         exit;
@@ -42,9 +50,11 @@ if (isset($_POST['login'])) {
             window.location='index.php?page=login';
         </script>
         ";
+
         exit;
     }
 }
 
 include 'views/auth/login_pengguna.php';
+
 ?>
