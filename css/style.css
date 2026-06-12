@@ -2118,3 +2118,2124 @@ td.aksi {
     background: var(--neutral-bg);
     border: 1px solid var(--neutral-border);
     border-radius: var(--radius-md);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+}
+
+
+.kartu-tips h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+.kartu-tips p {
+    font-size: 13px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+
+.daftar-aktivitas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.daftar-aktivitas li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    transition: 0.2s;
+}
+
+
+.daftar-aktivitas li:hover {
+    background: var(--neutral-bg);
+    color: var(--text-main);
+}
+
+
+.titik {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+
+.titik.merah {
+    background-color: var(--status-error);
+}
+
+
+.item-anak {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+.item-anak:hover {
+    background-color: var(--neutral-bg);
+}
+
+
+.avatar-anak {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+.avatar-anak.teal {
+    background-color: var(--secondary-light);
+    color: var(--secondary-dark);
+}
+
+
+.nama-anak {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+
+.usia-anak {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+
+.belum-anak {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+
+.foto-anak {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--neutral-border);
+}
+
+
+.dashboard-jadwal-box {
+    margin-top: 12px;
+    background: var(--neutral-bg);
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    transition: 0.2s;
+}
+
+
+.dashboard-jadwal-box:hover {
+    border-color: var(--primary);
+}
+
+
+.dashboard-jadwal-nama {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+.dashboard-jadwal-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+/* Desain class untuk fitur dashboard jadwal detail span */
+.dashboard-jadwal-detail span {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: var(--radius-pill);
+    background: var(--tertiary-light);
+    color: var(--tertiary-dark);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+/* Desain class untuk fitur dashboard jadwal lokasi */
+.dashboard-jadwal-lokasi {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Desain class untuk fitur dashboard status box */
+.dashboard-status-box {
+    margin-top: 12px;
+    background: var(--neutral-bg);
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-md);
+    padding: 16px;
+}
+
+/* Desain class untuk fitur dashboard status orang */
+.dashboard-status-orang {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* Desain class untuk fitur status avatar */
+.status-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--status-success-light);
+    color: var(--status-success);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+/* Desain class untuk fitur dashboard status orang p */
+.dashboard-status-orang p {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--text-main);
+    margin: 0;
+}
+
+/* Desain class untuk fitur dashboard status orang small */
+.dashboard-status-orang small {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* Desain class untuk fitur dashboard status badge */
+.dashboard-status-badge {
+    display: inline-flex;
+    width: max-content;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    background: var(--status-success-light);
+    color: var(--status-success);
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* Desain class untuk fitur dashboard aktivitas list */
+.dashboard-aktivitas-list {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Desain class untuk fitur dashboard aktivitas item */
+.dashboard-aktivitas-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+}
+
+/* Desain class untuk fitur aktivitas dot */
+.aktivitas-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+    margin-top: 6px;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 4px var(--secondary-light);
+}
+
+/* Desain class untuk fitur aktivitas dotmerah */
+.aktivitas-dot.merah {
+    background: var(--status-error);
+    box-shadow: 0 0 0 4px var(--status-error-light);
+}
+
+/* Desain class untuk fitur dashboard aktivitas item p */
+.dashboard-aktivitas-item p {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0 0 3px;
+    line-height: 1.5;
+}
+
+/* Desain class untuk fitur dashboard aktivitas item small */
+.dashboard-aktivitas-item small {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Pembungkus konten utama dashboard */
+.wrapper .konten-utama {
+    margin-left: 230px;
+    width: calc(100% - 230px);
+    max-width: none;
+    min-height: 100vh;
+    padding: 32px;
+    background-color: var(--neutral-bg);
+    overflow-x: hidden;
+}
+
+/* Desain class untuk fitur booking card */
+.booking-card {
+    background: #ffffff;
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-xl);
+    padding: 28px;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+/* Desain class untuk fitur grid anak */
+.grid-anak {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+/* Desain class untuk fitur kartu anak */
+.kartu-anak {
+    position: relative;
+    border: 1.5px solid var(--neutral-border);
+    border-radius: var(--radius-md);
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    background: #ffffff;
+    transition: border-color 0.18s, box-shadow 0.18s, background 0.18s;
+}
+
+/* Desain class untuk fitur kartu anak:hover */
+.kartu-anak:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 16px rgba(100, 149, 237, 0.12);
+}
+
+/* Desain class untuk fitur kartu anak input */
+.kartu-anak input {
+    accent-color: var(--primary);
+    flex-shrink: 0;
+}
+
+/* Desain class untuk fitur kartu anak:has(input:checked) */
+.kartu-anak:has(input:checked) {
+    border-color: var(--primary);
+    background: var(--primary-light);
+    box-shadow: 0 4px 16px rgba(100, 149, 237, 0.14);
+}
+
+/* Desain class untuk fitur wrapper avatar anak */
+.wrapper .avatar-anak {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+    font-family: var(--font-headline);
+}
+
+/* Mengatur tampilan font khusus untuk judul/heading */
+.kartu-anak h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 3px;
+    font-family: var(--font-headline);
+}
+
+/* Desain class untuk fitur kartu anak p */
+.kartu-anak p {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* Desain class untuk fitur booking submit */
+.booking-submit {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 18px;
+    border-top: 1px solid var(--neutral-border);
+}
+
+/* Desain class untuk fitur btn primary */
+.btn-primary {
+    border: none;
+    border-radius: var(--radius-pill);
+    background: var(--primary);
+    color: #ffffff;
+    padding: 11px 26px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--font-body);
+    box-shadow: 0 4px 14px rgba(100, 149, 237, 0.35);
+    transition: all 0.18s ease;
+    letter-spacing: 0.1px;
+}
+
+/* Desain class untuk fitur btn primary:hover */
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(29, 78, 216, 0.35);
+}
+
+/* Desain class untuk fitur empty state */
+.empty-state {
+    text-align: center;
+    padding: 52px 24px;
+    background: var(--neutral-bg);
+    border: 1.5px dashed var(--neutral-border);
+    border-radius: var(--radius-lg);
+}
+
+/* Desain class untuk fitur empty state p */
+.empty-state p {
+    margin-bottom: 18px;
+    color: var(--text-muted);
+    font-size: 13.5px;
+    line-height: 1.6;
+}
+
+/* Desain class untuk fitur empty state a */
+.empty-state a {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: var(--radius-pill);
+    background: var(--primary);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.18s ease;
+    box-shadow: 0 4px 14px rgba(100, 149, 237, 0.3);
+}
+
+/* Desain class untuk fitur empty state a:hover */
+.empty-state a:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+/* Pembungkus konten utama dashboard */
+.wrapper .konten-utama {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
+    padding: 28px;
+}
+
+/* Banner pengumuman di dashboard */
+.banner {
+    width: 100%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: var(--radius-xl);
+    padding: 40px 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 36px rgba(100, 149, 237, 0.25);
+    position: relative;
+}
+
+/* Banner pengumuman di dashboard */
+.banner::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+}
+
+/* Banner pengumuman di dashboard */
+.banner::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 40%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(127, 209, 201, 0.15);
+}
+
+/* Banner pengumuman di dashboard */
+.banner-teks {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+/* Mengatur tampilan font khusus untuk judul/heading */
+.banner-teks h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 14px;
+    letter-spacing: -0.3px;
+}
+
+/* Banner pengumuman di dashboard */
+.banner-teks p {
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+/* Banner pengumuman di dashboard */
+.banner-gambar {
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Banner pengumuman di dashboard */
+.banner-gambar img {
+    width: 180px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.12));
+}
+
+/* Desain class untuk fitur wrapper grid anak */
+.wrapper .grid-anak {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+/* Desain class untuk fitur wrapper kartu anak */
+.wrapper .kartu-anak {
+    background: #ffffff;
+    border-radius: var(--radius-xl);
+    padding: 24px;
+    border: 1px solid var(--neutral-border);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.25s ease;
+    display: block;
+    cursor: pointer;
+}
+
+/* Desain class untuk fitur wrapper kartu anak:hover */
+.wrapper .kartu-anak:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--secondary);
+}
+
+/* Desain class untuk fitur kartu anakkosong */
+.kartu-anak.kosong {
+    background: #ffffff;
+    border: 2px dashed var(--neutral-border);
+    border-radius: var(--radius-xl);
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Desain class untuk fitur kartu anakkosong p */
+.kartu-anak.kosong p {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+/* Desain class untuk fitur kartu header */
+.kartu-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+/* Desain class untuk fitur wrapper avatar anak */
+.wrapper .avatar-anak {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--secondary-light), var(--primary-light));
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Desain class untuk fitur wrapper foto anak */
+.wrapper .foto-anak {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    object-fit: cover;
+    border: 2px solid var(--neutral-border);
+    flex-shrink: 0;
+}
+
+/* Desain class untuk fitur wrapper nama anak */
+.wrapper .nama-anak {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}
+
+/* Desain class untuk fitur wrapper usia anak */
+.wrapper .usia-anak {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.76rem;
+    color: var(--text-muted);
+}
+
+/* Desain class untuk fitur icon detail */
+.icon-detail {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+/* Desain class untuk fitur kartu stats */
+.kartu-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+/* Desain class untuk fitur stat item */
+.stat-item {
+    background: var(--neutral-bg);
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-md);
+    padding: 14px;
+    transition: 0.2s;
+}
+
+/* Desain class untuk fitur stat item:hover */
+.stat-item:hover {
+    border-color: var(--primary);
+}
+
+/* Desain class untuk fitur wrapper stat label */
+.wrapper .stat-label {
+    display: block;
+    font-size: 0.62rem;
+    color: var(--text-muted);
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Desain class untuk fitur wrapper stat nilai */
+.wrapper .stat-nilai {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+/* Desain class untuk fitur kartu aksi */
+.kartu-aksi {
+    display: flex;
+    gap: 10px;
+}
+
+/* Desain class untuk fitur tombol detail */
+.tombol-detail {
+    flex: 1;
+    padding: 11px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.25s ease;
+    box-shadow: var(--shadow-primary);
+}
+
+/* Desain class untuk fitur tombol detail:hover */
+.tombol-detail:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(100, 149, 237, 0.35);
+}
+
+/* Desain class untuk fitur kartu tambah */
+.kartu-tambah {
+    min-height: 230px;
+    border-radius: var(--radius-xl);
+    border: 2px dashed var(--neutral-border);
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 24px;
+    transition: all 0.25s ease;
+}
+
+/* Desain class untuk fitur kartu tambah:hover */
+.kartu-tambah:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    background: var(--primary-light);
+    box-shadow: var(--shadow-md);
+}
+
+/* Desain class untuk fitur tombol tambah ikon */
+.tombol-tambah-ikon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary-light), var(--primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    transition: 0.25s;
+}
+
+/* Desain class untuk fitur kartu tambah:hover tombol tambah ikon */
+.kartu-tambah:hover .tombol-tambah-ikon {
+    background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+    transform: scale(1.08);
+}
+
+/* Desain class untuk fitur icon tambah */
+.icon-tambah {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* Desain class untuk fitur tambah judul */
+.tambah-judul {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}
+
+/* Desain class untuk fitur tambah sub */
+.tambah-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Desain kotak pencarian data */
+.search-top {
+    width: 260px;
+    height: 36px;
+    background: #ffffff;
+    border: 1.5px solid var(--neutral-border);
+    border-radius: var(--radius-pill);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 14px;
+    color: var(--text-muted);
+    transition: 0.2s;
+}
+
+/* Desain kotak pencarian data */
+.search-top:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(100, 149, 237, 0.10);
+}
+
+/* Desain kotak pencarian data */
+.search-top input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 13px;
+    font-family: var(--font-body);
+}
+
+/* Desain class untuk fitur peserta card */
+.peserta-card {
+    background: #ffffff;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--neutral-border);
+    border-top: 4px solid var(--primary);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+/* Desain class untuk fitur tabs */
+.tabs {
+    display: flex;
+    gap: 20px;
+    padding: 14px 22px 0;
+    border-bottom: 1px solid var(--neutral-border);
+}
+
+/* Desain class untuk fitur tab */
+.tab {
+    border: none;
+    background: transparent;
+    padding: 0 0 14px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+/* Desain class untuk fitur tab:hover */
+.tab:hover {
+    color: var(--primary);
+}
+
+/* Desain class untuk fitur tabaktif */
+.tab.aktif {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+/* Desain class untuk fitur filter row */
+.filter-row {
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--neutral-border);
+    background: var(--neutral-bg);
+}
+
+/* Desain kotak pencarian data */
+.search-box {
+    width: 260px;
+    height: 38px;
+    border: 1.5px solid var(--neutral-border);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    color: var(--text-muted);
+    background: #fff;
+    transition: 0.2s;
+}
+
+/* Desain kotak pencarian data */
+.search-box:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(100, 149, 237, 0.10);
+}
+
+/* Desain kotak pencarian data */
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 12px;
+    font-family: var(--font-body);
+}
+
+/* Desain class untuk fitur filter row select */
+.filter-row select {
+    height: 38px;
+    border: 1.5px solid var(--neutral-border);
+    border-radius: var(--radius-sm);
+    padding: 0 12px;
+    background: white;
+    font-size: 12px;
+    color: var(--text-main);
+    font-family: var(--font-body);
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* Desain class untuk fitur filter row select:focus */
+.filter-row select:focus {
+    border-color: var(--primary);
+}
+
+/* Desain class untuk fitur btn filter */
+.btn-filter {
+    margin-left: auto;
+    height: 38px;
+    padding: 0 16px;
+    border: 1.5px solid var(--neutral-border);
+    background: white;
+    border-radius: var(--radius-sm);
+    color: var(--text-main);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: 0.2s;
+}
+
+/* Desain class untuk fitur btn filter:hover */
+.btn-filter:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-light);
+}
+
+/* Wadah tabel data agar responsif di mobile */
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Desain class untuk fitur peserta info */
+.peserta-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Desain class untuk fitur inisial */
+.inisial {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    background: #b7eef6;
+    color: #16697A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+/* Desain class untuk fitur badge jk */
+.badge-jk {
+    padding: 5px 12px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Desain class untuk fitur badge jklaki */
+.badge-jk.laki {
+    background: #DBEAFE;
+    color: var(--primary-dark);
+}
+
+/* Desain class untuk fitur badge jkperempuan */
+.badge-jk.perempuan {
+    background: #FCE7F3;
+    color: #be185d;
+}
+
+/* Desain class untuk fitur empty data */
+.empty-data {
+    text-align: center;
+    padding: 32px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+/* Desain class untuk fitur aksi bar */
+.aksi-bar {
+    display: flex;
+    gap: 14px;
+    align-items: flex-end;
+    margin-bottom: 18px;
+}
+
+/* Desain class untuk fitur form cari */
+.form-cari {
+    flex: 1;
+    display: flex;
+    gap: 14px;
+}
+
+/* Desain class untuk fitur cari wrap */
+.cari-wrap {
+    flex: 1;
+    background: #ffffff;
+    border: 1.5px solid var(--neutral-border);
+    border-radius: var(--radius-sm);
+    padding: 11px 16px;
+    transition: border-color 0.18s, box-shadow 0.18s;
+}
+
+/* Desain class untuk fitur cari wrap:focus within */
+.cari-wrap:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(100, 149, 237, 0.12);
+}
+
+/* Desain class untuk fitur cari label */
+.cari-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+
+/* Desain class untuk fitur cari input row */
+.cari-input-row {
+    display: flex;
+    align-items: center;
+}
+
+/* Desain class untuk fitur cari input */
+.cari-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    color: var(--text-main);
+    background: transparent;
+}
+
+/* Desain class untuk fitur cari input::placeholder */
+.cari-input::placeholder {
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+/* Desain class untuk fitur cell anak */
+.cell-anak {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Desain class untuk fitur data balita foto anak */
+.data-balita .foto-anak,
+.info-balita-card .foto-anak {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--neutral-border);
+    flex-shrink: 0;
+}
+
+/* Desain class untuk fitur foto placeholder */
+.foto-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--secondary-light);
+    color: var(--secondary-dark);
+    font-weight: 800;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Desain class untuk fitur nik anak */
+.nik-anak {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+/* Desain class untuk fitur badge gender */
+.badge-gender {
+    display: inline-flex;
+    padding: 5px 12px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Desain class untuk fitur badge laki */
+.badge-laki {
+    background: #DBEAFE;
+    color: var(--primary-dark);
+}
+
+/* Desain class untuk fitur badge perempuan */
+.badge-perempuan {
+    background: #FCE7F3;
+    color: var(--tertiary-dark);
+}
+
+/* Desain class untuk fitur hasil pemeriksaan */
+.hasil-pemeriksaan {
+    display: block;
+    max-width: 240px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+/* Desain class untuk fitur status gizi */
+.status-gizi {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Desain class untuk fitur dot */
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Desain class untuk fitur dot hijau */
+.dot-hijau {
+    background: var(--status-success);
+    box-shadow: 0 0 0 3px var(--status-success-light);
+}
+
+/* Desain class untuk fitur dot merah */
+.dot-merah {
+    background: var(--status-error);
+    box-shadow: 0 0 0 3px var(--status-error-light);
+}
+
+/* Desain class untuk fitur gizi baik */
+.gizi-baik  { color: var(--status-success); }
+/* Desain class untuk fitur gizi buruk */
+.gizi-buruk { color: var(--status-error); }
+
+/* Tombol tindakan untuk menerima, menolak, atau menghapus data */
+.aksi-btn {
+    width: 100px;
+    height: 30px;
+    border-radius: var(--radius-sm);
+    border: 1.5px solid var(--neutral-border);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.16s ease;
+    background: #ffffff;
+    padding-left: 12px;
+}
+
+/* Tombol tindakan untuk menerima, menolak, atau menghapus data */
+.aksi-btn:hover {
+    transform: scale(1.08);
+}
+
+/* Desain class untuk fitur btn edit */
+.btn-edit  {
+    border-color: rgba(100, 149, 237, 0.4);
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+/* Desain class untuk fitur btn edit:hover */
+.btn-edit:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Tombol tindakan untuk menerima, menolak, atau menghapus data */
+.btn-hapus {
+    border-color: rgba(220, 38, 38, 0.3);
+    background: var(--status-error-light);
+    color: var(--status-error);
+}
+
+/* Tombol tindakan untuk menerima, menolak, atau menghapus data */
+.btn-hapus:hover {
+    background: var(--status-error);
+    border-color: var(--status-error);
+}
+
+/* Desain class untuk fitur icon aksi */
+.icon-aksi {
+    width: 14px;
+    height: 14px;
+}
+
+/* Desain class untuk fitur kolom aksi */
+.kolom-aksi {
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Grid rangkuman data ringkas */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 240px));
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+/* Desain class untuk fitur summary card */
+.summary-card {
+    background: #ffffff;
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-md);
+    padding: 20px 22px;
+    box-shadow: var(--shadow-sm);
+    border-left: 3px solid var(--primary);
+    transition: box-shadow 0.18s, transform 0.18s;
+}
+
+/* Desain class untuk fitur summary card:hover */
+.summary-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+}
+
+/* Desain class untuk fitur summary val */
+.summary-val {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 1;
+    font-family: var(--font-headline);
+    letter-spacing: -0.5px;
+}
+
+/* Desain class untuk fitur summary label */
+.summary-label {
+    font-size: 11.5px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Desain class untuk fitur form pemeriksaan card */
+.form-pemeriksaan-card {
+    background: #ffffff;
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    max-width: 760px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Desain class untuk fitur info balita card */
+.info-balita-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+    margin-bottom: 24px;
+}
+
+/* Mengatur tampilan font khusus untuk judul/heading */
+.info-balita-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+/* Desain class untuk fitur info balita card p */
+.info-balita-card p {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* Desain class untuk fitur form pemeriksaan card grup input */
+.form-pemeriksaan-card .grup-input {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+/* Desain class untuk fitur form pemeriksaan card label */
+.form-pemeriksaan-card label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* Desain class untuk fitur form pemeriksaan card input field */
+.form-pemeriksaan-card .input-field {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+    border: 1.5px solid var(--neutral-border);
+    background: var(--neutral-bg);
+    font-size: 13px;
+    font-family: var(--font-body);
+    color: var(--text-main);
+    outline: none;
+    transition: all 0.2s;
+}
+
+/* Desain class untuk fitur form pemeriksaan card input field:focus */
+.form-pemeriksaan-card .input-field:focus {
+    border-color: var(--primary);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(100, 149, 237, 0.08);
+}
+
+/* Desain class untuk fitur form pemeriksaan card textareainput field */
+.form-pemeriksaan-card textarea.input-field {
+    resize: none;
+    min-height: 130px;
+}
+
+/* Desain class untuk fitur form pemeriksaan card aksi form */
+.form-pemeriksaan-card .aksi-form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* Desain class untuk fitur form pemeriksaan card tombol batal */
+.form-pemeriksaan-card .tombol-batal,
+.form-pemeriksaan-card .tombol-simpan {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    padding: 12px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: var(--font-body);
+    transition: all 0.2s ease;
+}
+
+/* Desain class untuk fitur form pemeriksaan card tombol batal */
+.form-pemeriksaan-card .tombol-batal {
+    background: #ffffff;
+    border: 1.5px solid var(--neutral-border);
+    color: var(--text-muted);
+}
+
+/* Desain class untuk fitur form pemeriksaan card tombol batal:hover */
+.form-pemeriksaan-card .tombol-batal:hover {
+    background: var(--neutral-bg);
+    border-color: var(--text-muted);
+}
+
+/* Desain class untuk fitur form pemeriksaan card tombol simpan */
+.form-pemeriksaan-card .tombol-simpan {
+    border: none;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: var(--shadow-primary);
+}
+
+/* Desain class untuk fitur form pemeriksaan card tombol simpan:hover */
+.form-pemeriksaan-card .tombol-simpan:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(100, 149, 237, 0.35);
+}
+
+/* Desain class untuk fitur status imunisasi */
+.status-imunisasi {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Desain class untuk fitur badge imunisasi */
+.badge-imunisasi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Desain class untuk fitur badge sudah */
+.badge-sudah {
+    background: var(--status-success-light);
+    color: var(--status-success);
+}
+
+/* Desain class untuk fitur badge belum */
+.badge-belum {
+    background: var(--status-error-light);
+    color: var(--status-error);
+}
+
+/* Desain class untuk fitur status imunisasi small */
+.status-imunisasi small {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* Desain kotak pencarian data */
+.jadwal-admin .search-box {
+    width: 320px;
+    border-radius: var(--radius-pill);
+    padding: 0 14px;
+}
+
+/* Desain class untuk fitur td nomor */
+.td-nomor {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Desain class untuk fitur nama kegiatan */
+.nama-kegiatan {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* Desain class untuk fitur ket kegiatan */
+.ket-kegiatan {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+/* Desain class untuk fitur tgl wrap */
+.tgl-wrap,
+.jam-wrap,
+.lokasi-wrap {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* Desain class untuk fitur tgl wrap i */
+.tgl-wrap i    { color: var(--secondary-dark); }
+/* Desain class untuk fitur jam wrap i */
+.jam-wrap i    { color: var(--secondary-dark); }
+/* Desain class untuk fitur lokasi wrap i */
+.lokasi-wrap i { color: var(--tertiary-dark); }
+
+/* Desain class untuk fitur kader wrap */
+.kader-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+/* Desain class untuk fitur kader avatar */
+.kader-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--secondary-light);
+    color: var(--secondary-dark);
+    font-weight: 800;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Desain class untuk fitur badge mendatang */
+.badge-mendatang {
+    background: var(--secondary-light);
+    color: var(--secondary-dark);
+    padding: 4px 11px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Desain class untuk fitur badge hari ini */
+.badge-hari-ini {
+    background: #FEF3C7;
+    color: #92400E;
+    padding: 4px 11px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Desain class untuk fitur badge lewat */
+.badge-lewat {
+    background: var(--neutral-bg);
+    color: var(--text-muted);
+    border: 1px solid var(--neutral-border);
+    padding: 4px 11px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Kartu form isian data di dashboard */
+.jadwal-form-card {
+    background: #ffffff;
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-lg);
+    padding: 24px 28px;
+    margin-bottom: 22px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Kartu form isian data di dashboard */
+.form-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--neutral-border);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-main);
+    font-family: var(--font-headline);
+}
+
+/* Kartu form isian data di dashboard */
+.form-card-header::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 16px;
+    border-radius: 2px;
+    background: var(--primary);
+    flex-shrink: 0;
+}
+
+/* Tata letak kolom input form jadwal */
+.form-grid-jadwal {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/* Desain class untuk fitur form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Desain class untuk fitur form full */
+.form-full {
+    grid-column: 1 / -1;
+}
+
+/* Desain class untuk fitur form group label */
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.3px;
+}
+
+/* Desain class untuk fitur wajib */
+.wajib   { color: var(--status-error); font-style: normal; }
+/* Desain class untuk fitur opsional */
+.opsional { color: var(--text-muted); font-weight: 400; font-style: italic; font-size: 11px; }
+
+/* Desain class untuk fitur form group input */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1.5px solid var(--neutral-border);
+    border-radius: var(--radius-sm);
+    padding: 10px 13px;
+    font-size: 13.5px;
+    font-family: var(--font-body);
+    color: var(--text-main);
+    outline: none;
+    background: #ffffff;
+    transition: border-color 0.18s, box-shadow 0.18s;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* Desain class untuk fitur form group select */
+.form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='%2364748B' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+    cursor: pointer;
+}
+
+/* Desain class untuk fitur form group textarea */
+.form-group textarea {
+    resize: vertical;
+    min-height: 88px;
+    line-height: 1.6;
+    appearance: auto;
+    -webkit-appearance: auto;
+}
+
+/* Desain class untuk fitur form group input:focus */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(100, 149, 237, 0.12);
+}
+
+/* Desain class untuk fitur form group input[type="file"] */
+.form-group input[type="file"] {
+    padding: 9px 12px;
+    background: var(--neutral-bg);
+    color: var(--text-muted);
+    border-style: dashed;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* Desain class untuk fitur form group input[type="file"]:: webkit file upload button */
+.form-group input[type="file"]::-webkit-file-upload-button {
+    background: var(--primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background 0.18s;
+}
+
+/* Desain class untuk fitur form group input[type="file"]:: webkit file upload button:hover */
+.form-group input[type="file"]::-webkit-file-upload-button:hover {
+    background: var(--primary-dark);
+}
+
+/* Desain class untuk fitur form aksi */
+.form-aksi {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--neutral-border);
+}
+
+/* Desain class untuk fitur btn batal */
+.btn-batal,
+.btn-simpan {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-pill);
+    padding: 10px 22px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: var(--font-body);
+    transition: all 0.18s ease;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+}
+
+/* Desain class untuk fitur btn batal */
+.btn-batal {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1.5px solid var(--neutral-border);
+}
+
+/* Desain class untuk fitur btn batal:hover */
+.btn-batal:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-light);
+}
+
+/* Desain class untuk fitur btn simpan */
+.btn-simpan {
+    border: none;
+    background: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(100, 149, 237, 0.35);
+}
+
+/* Desain class untuk fitur btn simpan:hover */
+.btn-simpan:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(29, 78, 216, 0.35);
+}
+
+/* Desain class untuk fitur alert */
+.alert {
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 3px solid transparent;
+}
+
+/* Desain class untuk fitur alert sukses */
+.alert-sukses {
+    color: var(--status-success);
+    background: var(--status-success-light);
+    border-left-color: var(--status-success);
+}
+
+/* Desain class untuk fitur alert gagal */
+.alert-gagal {
+    color: var(--status-error);
+    background: var(--status-error-light);
+    border-left-color: var(--status-error);
+}
+
+/* Desain class untuk fitur badge kategori */
+.badge-kategori,
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 11px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: 0.1px;
+}
+
+/* Desain class untuk fitur badge kategoribalita */
+.badge-kategori.balita {
+    background: #DBEAFE;
+    color: var(--primary-dark);
+}
+
+/* Desain class untuk fitur badge kategoribumil */
+.badge-kategori.bumil {
+    background: #FCE7F3;
+    color: var(--tertiary-dark);
+}
+
+/* Desain class untuk fitur badge kategorisemua */
+.badge-kategori.semua {
+    background: var(--secondary-light);
+    color: var(--secondary-dark);
+}
+
+/* Desain class untuk fitur header jadwal */
+.header-jadwal {
+    background: #ffffff;
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-lg);
+    padding: 26px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Mengatur tampilan font khusus untuk judul/heading */
+.header-jadwal h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+}
+
+/* Desain class untuk fitur deskripsi */
+.deskripsi {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* Desain class untuk fitur filter card */
+.filter-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+/* Desain class untuk fitur filter link */
+.filter-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: var(--radius-pill);
+    background: #ffffff;
+    border: 1.5px solid var(--neutral-border);
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+/* Desain class untuk fitur filter link:hover */
+.filter-link:hover,
+.filter-link.aktif {
+    background: var(--secondary-light);
+    color: var(--secondary-dark);
+    border-color: var(--secondary-light);
+}
+
+/* Desain class untuk fitur grid jadwal */
+.grid-jadwal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 22px;
+}
+
+/* Kartu jadwal kegiatan */
+.kartu-jadwal {
+    background: #ffffff;
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Kartu jadwal kegiatan */
+.kartu-jadwal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+/* Kartu jadwal kegiatan */
+.kartu-jadwal:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--secondary);
+}
+
+/* Desain class untuk fitur badge statushari ini */
+.badge-status.hari-ini  {
+    background: #FEF3C7;
+    color: #92400E;
+    padding: 5px 12px;
+    border-radius: var(--radius-pill);
+}
+
+/* Desain class untuk fitur badge statusmendatang */
+.badge-status.mendatang {
+    background: var(--secondary-light);
+    color: var(--secondary-dark);
+    padding: 5px 12px;
+    border-radius: var(--radius-pill);
+}
+
+/* Desain class untuk fitur badge statusselesai */
+.badge-status.selesai {
+    background: var(--neutral-bg);
+    color: var(--text-muted);
+    padding: 5px 12px;
+    border-radius: var(--radius-pill);
+}
+
+/* Desain class untuk fitur judul kegiatan */
+.judul-kegiatan {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+/* Desain class untuk fitur detail list */
+.detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Desain class untuk fitur detail item */
+.detail-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Desain class untuk fitur label detail */
+.label-detail {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+/* Desain class untuk fitur catatan */
+.catatan {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid var(--neutral-border);
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* Desain class untuk fitur aksi jadwal */
+.aksi-jadwal {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--neutral-border);
+}
+
+/* Desain class untuk fitur btn daftar */
+.btn-daftar,
+.btn-history {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    transition: all 0.25s ease;
+}
+
+/* Desain class untuk fitur btn daftar */
+.btn-daftar {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #ffffff;
+    box-shadow: var(--shadow-primary);
+}
+
+/* Desain class untuk fitur btn daftar:hover */
+.btn-daftar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(100, 149, 237, 0.35);
+}
+
+/* Desain class untuk fitur btn history */
+.btn-history {
+    background: #ffffff;
+    color: var(--primary);
+    border: 1.5px solid var(--neutral-border);
+}
+
+/* Desain class untuk fitur btn history:hover */
+.btn-history:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+}
+
+/* Desain class untuk fitur btn disabled */
+.btn-disabled {
+    border: none;
+    outline: none;
+    padding: 10px 18px;
+    border-radius: var(--radius-md);
+    background: var(--neutral-bg);
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: not-allowed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
+}
+
+/* Desain class untuk fitur empty state */
+.empty-state {
+    grid-column: 1 / -1;
+    background: #ffffff;
+    border: 2px dashed var(--neutral-border);
+    border-radius: var(--radius-lg);
+    padding: 64px 24px;
+    text-align: center;
+}
+
+/* Mengatur tampilan font khusus untuk judul/heading */
+.empty-state h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+/* Desain class untuk fitur empty state p */
+.empty-state p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* Desain class untuk fitur riwayat list */
+.riwayat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Desain class untuk fitur riwayat item */
+.riwayat-item {
+    background: #ffffff;
+    border: 1px solid var(--neutral-border);
+    border-radius: var(--radius-xl);
+    padding: 26px;
+    box-shadow: var(--shadow-sm);
+    transition: 0.25s;
+}
+
+/* Desain class untuk fitur riwayat item:hover */
+.riwayat-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+/* Desain class untuk fitur riwayat top */
+.riwayat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+/* Desain class untuk fitur nama riwayat */
+.nama-riwayat {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Desain class untuk fitur inisial riwayat */
+.inisial-riwayat {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary-light), var(--primary-light));
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    flex-shrink: 0;
+    border: 2px solid var(--secondary-light);
+}
+
+/* Mengatur tampilan font khusus untuk judul/heading */
+.nama-riwayat h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+/* Desain class untuk fitur nama riwayat p */
+.nama-riwayat p {
+    margin-top: 3px;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* Desain class untuk fitur badge riwayat */
+.badge-riwayat {
+    padding: 7px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* Desain class untuk fitur badge riwayatbalita */
+.badge-riwayat.balita {
+    background: #DBEAFE;
+    color: var(--primary-dark);
